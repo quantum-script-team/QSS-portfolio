@@ -1,7 +1,8 @@
- import Logo from "/Users/Usuario/Desktop/QSS/QSS-portfolio/frontend/public/img/Inicio/logo.png"
- import img from "/Users/Usuario/Desktop/QSS/QSS-portfolio/frontend/public/img/Inicio/img-inicio.png"
+  import Logo from "../../../public/img/Inicio/logo.png"
+  import img from "../../../public/img/Inicio/img-inicio.png"
   import "./Header.css"
- const Header = () => {
+  
+const Header = () => {
   return (
     <div className="container"> 
         <div className="header">
