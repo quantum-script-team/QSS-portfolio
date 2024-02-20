@@ -1,11 +1,15 @@
 import './App.css'
-import CarrUsel from "../src/carrusel/carr"
+import SwipeToSlide from "./carrusel/slider"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
+import "./carrusel/slider.css"
+
 function App() {
 
   return (
     <>
-      <div>
-        < CarrUsel />
+      <div style={{ padding: "2.5em" }} className='padding'>
+        < SwipeToSlide />
       </div>
     </>
   )

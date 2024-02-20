@@ -1,1 +1,6 @@
-/* CSS para main.jsx - Se podría agregar el código de reset acá */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Exo';
+}
