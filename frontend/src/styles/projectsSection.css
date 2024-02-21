@@ -1,0 +1,61 @@
+/* Variables */
+:root {
+    /* Colors */
+    --dark-grey: #2D2D2D;
+    --silver: #AEAEAE;
+    --violet-purple: #7F5AF0;
+    --white-smoke: #F5F5F5;
+}
+
+/* Projects Section */
+.projects__section {
+    height: 100vh;
+    background-color: var(--dark-grey);
+    padding: 20px;
+}
+
+/* Title */
+.projects__title {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: var(--white-smoke);
+}
+
+/* Project Image */
+
+/* Project name */
+.projects__name {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--silver);
+}
+
+/* Project description */
+.projects__text {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white-smoke);
+}
+
+/* Buttons */
+.projects__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link__btn {
+    border: none;
+    background: none;
+    font-size: 36px;
+    color: var(--violet-purple);
+}
+
+.seeMore__btn {
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--violet-purple);
+}
