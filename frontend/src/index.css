@@ -4,3 +4,11 @@
 	box-sizing: border-box;
 	font-family: 'Exo';
 }
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+

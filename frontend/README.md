@@ -1,9 +1,9 @@
-# Comandos para arrancar a codear: 
+# Comandos para arrancar a codear:
+## Instalar paquetes y visualizar el proyecto en el navegador:
 
-## Instalar paquetes y visualizar el proyecto en el navegador: 
-```sh 
-npm install 
-npm run dev
+```sh
+    npm install 
+    npm run dev    
 ```
 
 ## Herramientas a usar
