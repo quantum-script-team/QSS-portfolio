@@ -15,7 +15,7 @@ export const Servicios = ()=> {
     </div>
     <h2 className="title">Desarrollo de sitios web</h2>
     <p className="text">Construimos tu sitio web a tu medida</p>
-    <Link to="/may">
+    <Link to="">
     <button className="button" >Consulta</button>
     </Link>
   </div>,
@@ -25,7 +25,7 @@ export const Servicios = ()=> {
     </div>
     <h2 className="title">Mantenimiento de sitios</h2>
     <p className="text">Transformamos y gestionamos tu página web</p>
-    <Link to="www.google.com">
+    <Link to="">
     <button className="button" >Consulta</button>
     </Link>
   </div>,
@@ -36,7 +36,7 @@ export const Servicios = ()=> {
     </div>
     <h2 className="title">Hosting</h2>
     <p className="text">Servicio de Hosting rápido, seguro y confiable</p>
-    <Link to="www.google.com">
+    <Link to="">
     <button className="button" >Consulta</button>
     </Link>
     </div>
@@ -68,6 +68,7 @@ export const Servicios = ()=> {
   
   return (
     <>
+    <h1 className='titlePrincipal'>SERVICIOS</h1>
       <Swiper
         slidesPerView={slidesPerViews}
         spaceBetween={10}
@@ -89,5 +90,5 @@ export const Servicios = ()=> {
 
       </Swiper>
     </>
-  );
+  )
 }
