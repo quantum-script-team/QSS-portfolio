@@ -88,7 +88,6 @@ export const Servicios = ()=> {
 
 
       </Swiper>
-       <button>HOla</button>
     </>
   );
 }
