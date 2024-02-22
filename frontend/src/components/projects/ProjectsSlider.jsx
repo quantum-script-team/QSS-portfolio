@@ -2,20 +2,20 @@ import "../../styles/projects/projectsSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import Project from "./Project";
+import Project from "./Project";
 import Slider from "react-slick";
 
 import {projects} from '../../data/projects.json'
-import BasicModal from "./ProjectModal";
 
 function ProjectsSlider() {
   const settings = {
     className: "slider__",
-    centerMode: true,
+    /* centerMode: true,
+    centerPadding: "32px", */
     dots: true,
+    draggable: false,
     rows: 2,
-    infinite: false,
-    centerPadding: "128px",
+    infinite: true,
     slidesToShow: 3,
     speed: 500,
     slidesPerRow: 1,
@@ -50,10 +50,9 @@ function ProjectsSlider() {
   return (
     <section id="slider__container">
       <Slider {...settings}>
-        {/* {projects.map((project) => (
-          <Project key={project.id} projectData={project} />
-        ))} */}
-        <BasicModal></BasicModal>
+        {projects.map((project) => (
+          <Project key={project.id} projectData={project}/>
+        ))}
       </Slider>
     </section>
   );

@@ -1,11 +1,11 @@
 import './App.css'
 import Projects from './pages/Projects'
-import Header from './components/Header/Header'
+// import Header from './components/Header/Header'
 function App() {
 
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
       <Projects></Projects>      
     </>
   )
