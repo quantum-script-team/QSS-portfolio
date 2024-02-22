@@ -35,11 +35,31 @@ export const Servicios = ()=> {
 
     
   ]
+  const [slidesPerViews, setSlidesPerViews] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Ajusta slidesPerViews dependiendo del ancho de la pantalla
+      if (window.innerWidth >= 768) {
+        setSlidesPerViews(2); // Tablet y pantallas más grandes
+      } else {
+        setSlidesPerViews(1); // Móvil
+      }
+    };
+
+    handleResize(); // Llama a la función para establecer el valor inicial
+
+    window.addEventListener('resize', handleResize); // Escucha el evento de cambio de tamaño de la ventana
+
+    return () => {
+      window.removeEventListener('resize', handleResize); // Limpia el event listener en la desmontura del componente
+    };
+  }, []);
   
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={slidesPerViews}
         spaceBetween={10}
         pagination={{
           clickable: true,
