@@ -3,24 +3,30 @@ import "../../styles/projects/projectCard.css";
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-
-import { SlLink } from "react-icons/sl";
-import { Link } from "@mui/material";
+import Typography from '@mui/material/Typography';
+import ProjectLinkBtn from "./ProjectLinkBtn";
 
 
 const Project = ({ projectData }) => {
+
+
+
   return (
-    <Card sx={{ maxWidth: 256 }} className="project__card">
+    <Card sx={{ maxWidth: 320 }} className="project__card">
       <CardMedia
         sx={{ height: 128 }}
         image={`img/projects/${projectData.image}`}
         title={projectData.name}
       />
-      <CardActions>
-        <Link href={projectData.link} fontSize={'large'} underline="none" target="_blank" rel="noreferrer">
-          <SlLink />
-        </Link>
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {projectData.name}
+        </Typography>
+      </CardContent>
+      <CardActions className="project__actions">
+        <ProjectLinkBtn projectData={projectData}></ProjectLinkBtn>
       </CardActions>
     </Card>
   );

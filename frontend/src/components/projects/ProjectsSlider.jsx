@@ -10,10 +10,8 @@ import {projects} from '../../data/projects.json'
 function ProjectsSlider() {
   const settings = {
     className: "slider__",
-    /* centerMode: true,
-    centerPadding: "32px", */
     dots: true,
-    draggable: false,
+    draggable: true,
     rows: 2,
     infinite: true,
     slidesToShow: 3,
@@ -21,27 +19,53 @@ function ProjectsSlider() {
     slidesPerRow: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1176,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 2,
+          rows: 2,
           infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          rows: 2,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 2,
+          infinite: false,
           dots: true
         }
       },
       {
         breakpoint: 570,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 1,
+          infinite: false,
+          dots: false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          rows: 1,
+          infinite: false,
+          dots: false
         }
       }
     ]

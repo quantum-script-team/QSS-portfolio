@@ -1,12 +1,12 @@
 #projects_section{
-    background-color: #2D2D2D;
+    background-color: #242624;
     min-height: 100vh;
 }
 
 #projects__section h1{
-    background-color: #2D2D2D;
+    background-color: #242624;
     color: #F5F5F5;
     text-align: center;
     margin: 0;
-    padding: 1rem 0;
+    padding: 1rem;
 }

@@ -1,9 +1,10 @@
-import '../../styles/projects/projectModal.css'
 import { SlLink } from "react-icons/sl";
 
-const ProjectLinkBtn = () => {
+const ProjectLinkBtn = ({projectData}) => {
   return (
-    <SlLink className="project__link" />
+    <a className="project__link" href={projectData.link} target="_blank" rel="noreferrer">
+      <SlLink />
+    </a>
   )
 }
 
