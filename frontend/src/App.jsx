@@ -1,12 +1,14 @@
 import './App.css'
-import Projects from './pages/Projects'
+import { Servicios } from './Servicios/Servicios'
+// import { Servicios } from './Servicios/servicios1'
 import Header from './components/Header/Header'
+
 function App() {
 
   return (
     <>
-      <Header/>
-      <Projects></Projects>      
+      {/* <Header/> */}
+      <Servicios/>
     </>
   )
 }
