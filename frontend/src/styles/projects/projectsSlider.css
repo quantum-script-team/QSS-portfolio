@@ -16,11 +16,11 @@
     width: 100%;
 }
 
-#slider__container .slick-list .slick-track{
+/* #slider__container .slick-list .slick-track{
     gap: 1rem;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* #slider__container .slick-slide{
     display: flex;

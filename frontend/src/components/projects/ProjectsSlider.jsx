@@ -1,6 +1,6 @@
-import "../../styles/projects/projectsSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../../styles/projects/projectsSlider.css";
 
 import Project from "./Project";
 import Slider from "react-slick";
