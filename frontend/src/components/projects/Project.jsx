@@ -11,9 +11,9 @@ import { Link } from "@mui/material";
 
 const Project = ({ projectData }) => {
   return (
-    <Card sx={{ maxWidth: 345 }} className="project__card">
+    <Card sx={{ maxWidth: 256 }} className="project__card">
       <CardMedia
-        sx={{ height: 256 }}
+        sx={{ height: 128 }}
         image={`img/projects/${projectData.image}`}
         title={projectData.name}
       />
