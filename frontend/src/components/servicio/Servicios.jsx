@@ -67,7 +67,9 @@ const Servicios = () => {
     infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    // autoplaySpeed: 2000,
   };
 
   return (
