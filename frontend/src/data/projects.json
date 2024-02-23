@@ -4,7 +4,7 @@
           "id": 1,
           "name": "LTH Store",
           "image": "lth-store.png",
-          "description": "",
+          "description": "E-commerce dedicado a la exposición y gestión de productos para la minería de criptomonedas.",
           "link": "https://lthstore-v3.netlify.app/"
         },
         {
@@ -51,10 +51,10 @@
         },
         {
           "id": 8,
-          "name": "Palette generator app",
-          "image": "../../../public/img/projects/palette-generator-app.png",
+          "name": "LadyFitLovers",
+          "image": "lady-fit-lovers.png",
           "description": "",
-          "link": "https://palettesgenerator.netlify.app/"
+          "link": "https://pf-front-five.vercel.app/"
         },
         {
           "id": 9,

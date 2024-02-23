@@ -3,9 +3,10 @@
 	height: 120px;
 	color: red;
 }
-.slick-next{
+
+/* .slick-next{
 	display: none !important;
-}
+} */
 
 .react{
 	color: #61DAFB;
@@ -88,9 +89,9 @@
 		height: 120px;
 		color: red;
 	}
-	.slick-next{
+	/* .slick-next{
 		display: none !important;
-	}
+	} */
 	
 	.react{
 		color: #61DAFB;
@@ -174,9 +175,9 @@
 		height: 100px;
 		color: red;
 	}
-	.slick-next{
+	/* .slick-next{
 		display: none !important;
-	}
+	} */
 	
 	.react{
 		color: #61DAFB;
@@ -260,9 +261,9 @@
 		height: 45px;
 		color: red;
 	}
-	.slick-next{
+	/* .slick-next{
 		display: none !important;
-	}
+	} */
 	
 	.react{
 		color: #61DAFB;
