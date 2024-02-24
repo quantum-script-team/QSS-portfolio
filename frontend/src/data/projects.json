@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+          "id": 1,
+          "name": "LTH Store",
+          "image": "lth-store.png",
+          "description": "E-commerce dedicado a la exposición y gestión de productos para la minería de criptomonedas.",
+          "link": "https://lthstore-v3.netlify.app/"
+        },
+        {
+          "id": 2,
+          "name": "Palette generator app",
+          "image": "palette-generator-app.png",
+          "description": "",
+          "link": "https://palettesgenerator.netlify.app/"
+        },
+        {
+          "id": 3,
+          "name": "Apepería",
+          "image": "apeperia.png",
+          "description": "",
+          "link": "https://facuur001.github.io/appeperia.github.io/"
+        },
+        {
+          "id": 4,
+          "name": "Blog de café",
+          "image": "cafe-blog.png",
+          "description": "",
+          "link": "https://blog-de-cafe-landing.netlify.app/"
+        },
+        {
+          "id": 5,
+          "name": "Org Workteam",
+          "image": "org-workteam.png",
+          "description": "",
+          "link": "https://org-sand-ten.vercel.app/"
+        },
+        {
+          "id": 6,
+          "name": "Alura Geek",
+          "image": "alura-geek.png",
+          "description": "",
+          "link": "https://e-commerce-github-io-iota.vercel.app/"
+        },
+        {
+          "id": 7,
+          "name": "Did you watch it?",
+          "image": "did-u-watch-it.png",
+          "description": "",
+          "link": "https://duwi-frontend.vercel.app/Home"
+        },
+        {
+          "id": 8,
+          "name": "LadyFitLovers",
+          "image": "lady-fit-lovers.png",
+          "description": "",
+          "link": "https://pf-front-five.vercel.app/"
+        },
+        {
+          "id": 9,
+          "name": "Palette generator app",
+          "image": "../../../public/img/projects/palette-generator-app.png",
+          "description": "",
+          "link": "https://palettesgenerator.netlify.app/"
+        },
+        {
+          "id": 10,
+          "name": "Palette generator app",
+          "image": "../../../public/img/projects/palette-generator-app.png",
+          "description": "",
+          "link": "https://palettesgenerator.netlify.app/"
+        }
+      ]
+}
