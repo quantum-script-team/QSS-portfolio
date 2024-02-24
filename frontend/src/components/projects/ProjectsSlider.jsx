@@ -32,10 +32,10 @@ function ProjectsSlider() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           rows: 2,
-          infinite: true,
-          dots: false
+          infinite: false,
+          dots: true
         }
       },
       {
@@ -44,14 +44,14 @@ function ProjectsSlider() {
           slidesToShow: 2,
           slidesToScroll: 1,
           rows: 2,
-          infinite: false,
+          infinite: true,
           dots: true
         }
       },
       {
         breakpoint: 570,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           rows: 1,
           infinite: false,
