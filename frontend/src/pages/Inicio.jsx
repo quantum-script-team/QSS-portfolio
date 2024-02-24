@@ -1,10 +1,10 @@
-import Contacto from '../components/contact/Contact';
+import Contact from "../components/Contact/Contact"
 
 const Inicio = () => {
 
   return (
     <div>
-      <Contacto/>
+      Inicio
     </div>
   )
 }
