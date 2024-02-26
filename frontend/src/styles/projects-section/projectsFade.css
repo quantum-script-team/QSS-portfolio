@@ -1,0 +1,117 @@
+/* Project image */
+.image__container {
+    border-radius: 15px;
+    overflow: hidden;
+    min-height: 160px;
+    width: 100%;
+    min-width: 280px;
+    margin: 20px 0;
+}
+
+.image__container img {
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+}
+
+/* Project name */
+.projects__name {
+    font-weight: 600;
+    font-size: 24px;
+    color: #AEAEAE;
+}
+
+/* Project description */
+.projects__description {
+    font-weight: 500;
+    font-size: 16px;
+    color: #F5F5F5;
+    margin-top: 10px;
+}
+
+/* Project buttons */
+
+.buttons__container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.link__btn {
+    height: 40px;
+    border: none;
+    background: none;
+    font-size: 36px;
+    color: #7F5AF0;
+    align-self: baseline;
+}
+
+.seeMore__btn {
+    height: 40px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: #7F5AF0;
+}
+
+@media screen and (min-width: 768px) {
+    /* Projects grid */
+    .projects__grid {
+        margin: 20px 0 50px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  0.3fr 1fr 0.2fr;
+        gap: 10px 20px;
+        grid-template-areas: 
+        "img name"
+        "img description"
+        "img btn"; 
+        justify-items: center; 
+    }
+
+    /* Project image */
+    .image__container ,.projects__description, .buttons__container {
+        margin: 0;
+    }
+
+    .image__container { 
+        grid-area: img; 
+    }
+    
+    /* Project name */
+    .projects__name { 
+        grid-area: name;
+        justify-self: start;
+    }
+
+    /* Project description */
+    .projects__description { 
+        grid-area: description;
+        justify-self: start;
+        font-size: 13px;
+        max-height: 355px;
+    }
+
+    /* Project buttons */
+    .buttons__container { 
+        grid-area: btn;
+        justify-self: start;
+        align-self: center;
+        height: 36px;
+    }
+
+    .seeMore__btn {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    /* Project description */
+    .projects__description {
+        font-size: 16px;
+    }
+}
