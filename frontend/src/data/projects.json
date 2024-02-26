@@ -55,20 +55,6 @@
           "image": "lady-fit-lovers.png",
           "description": "",
           "link": "https://pf-front-five.vercel.app/"
-        },
-        {
-          "id": 9,
-          "name": "Palette generator app",
-          "image": "../../../public/img/projects/palette-generator-app.png",
-          "description": "",
-          "link": "https://palettesgenerator.netlify.app/"
-        },
-        {
-          "id": 10,
-          "name": "Palette generator app",
-          "image": "../../../public/img/projects/palette-generator-app.png",
-          "description": "",
-          "link": "https://palettesgenerator.netlify.app/"
         }
       ]
 }

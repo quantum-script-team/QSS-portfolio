@@ -8,7 +8,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import ProjectLinkBtn from "./ProjectLinkBtn";
 
-import { Link } from "react-router-dom";
 import ProjectTitle from "./ProjectTitle";
 
 const Project = ({ projectData }) => {
@@ -24,14 +23,19 @@ const Project = ({ projectData }) => {
           gutterBottom
           variant="h6"
           component="div"
+          sx={{color: "#F5F5F5"}}
         >
           <ProjectTitle projectData={projectData} />
         </Typography>
+        <Typography
+          variant="p"
+          component="div"
+          sx={{color: "#F5F5F5"}}
+        >
+          {projectData.description}
+        </Typography>
       </CardContent>
       <CardActions className="project__actions">
-        <Link to={`/contact`} className="contact__link">
-          Contactanos
-        </Link>
         <ProjectLinkBtn projectData={projectData} />
       </CardActions>
     </Card>
