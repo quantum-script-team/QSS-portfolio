@@ -30,9 +30,3 @@ function App() {
 }
 
 export default App
-
-      // <div style={{ padding: "2.5em" }} className='padding'>
-      //   < SwipeToSlide />
-      // </div>
-      // <Header/>
-      // <Projects></Projects>  
