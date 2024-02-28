@@ -1,4 +1,4 @@
-import Contact from "../components/Contact/Contact"
+import Contact from "../components/contact/Contact"
 
 const Inicio = () => {
 
