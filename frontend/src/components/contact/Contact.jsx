@@ -4,7 +4,7 @@ import FormCountry from "./FormCountry";
 import { useState } from "react";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { public_key } from "../../utils/environmentVariables";
+import { public_key, template } from "../../utils/environmentVariables";
 const Contact = () => {
   const form = useRef();
   const [error, setError] = useState({
@@ -32,7 +32,7 @@ const Contact = () => {
     if (checkMail(error)) {
 
       emailjs
-        .sendForm('service_0hq5pn8', 'template_gbzxunm', form.current, {
+        .sendForm(template, 'template_gbzxunm', form.current, {
           publicKey: public_key,
         })
         .then(
