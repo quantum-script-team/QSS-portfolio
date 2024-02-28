@@ -2,7 +2,7 @@
 
 #slider__container{
     margin: 0;
-    padding: 2rem;
+    padding: 1.5rem 4rem;
     background-color: #242624;
 }
 
@@ -20,13 +20,6 @@
     width: 100%;
 }
 
-.slider__ .slick-slide div{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
 .slider__ .slick-dots{
     padding-bottom: 1rem;
 }
@@ -36,8 +29,21 @@
     border-radius: 1rem;
 }
 
-/* @media (max-width: 800px) {
-    .flex-container {
-        flex-direction: column;
+
+/* Padding de contenedor en responsive */
+
+@media (max-width: 600px) {
+    #slider__container{
+        margin: 0;
+        padding: 1rem 3rem;
+        background-color: #242624;
     }
-  } */
+}
+
+@media (max-width: 480px) {
+    #slider__container{
+        margin: 0;
+        padding: 1rem 2.5rem;
+        background-color: #242624;
+    }
+}
