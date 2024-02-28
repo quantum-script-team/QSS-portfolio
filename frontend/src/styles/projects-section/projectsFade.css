@@ -34,17 +34,29 @@
 .buttons__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 60px;
     margin-top: 20px;
 }
 
 .link__btn {
-    height: 40px;
-    border: none;
-    background: none;
-    font-size: 36px;
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-decoration: none;
     color: #7F5AF0;
-    align-self: baseline;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 0 0 #111;
+    transition: box-shadow .5s;
+}
+
+.link__btn:hover {
+    box-shadow: 0 0 .5rem #2CB67D;
 }
 
 .seeMore__btn {
@@ -113,5 +125,10 @@
     /* Project description */
     .projects__description {
         font-size: 16px;
+    }
+
+    /* Project Buttons */
+    .link__btn {
+        font-size: 2rem;
     }
 }

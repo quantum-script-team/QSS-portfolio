@@ -1,5 +1,5 @@
 import "../../styles/projects-section/projectsFade.css"
-import { HiOutlineLink } from "react-icons/hi";
+import { SlLink } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
 const ProjectsFade = ({ projectData }) => {
@@ -14,11 +14,11 @@ const ProjectsFade = ({ projectData }) => {
 
             <p className="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eum fugiat, aut, atque quaerat accusamus deserunt tenetur porro exercitationem saepe ipsam! Ex odit suscipit minus ipsum fuga maxime id harum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam commodi suscipit, illum saepe ullam temporibus labore enim unde exercitationem.</p>
 
-            <div className="buttons__container">
+            <div className="buttons__container">    
+                <a className="link__btn" href={projectData.link}><SlLink /></a>
                 <Link to="/projects">
-                    <button className="link__btn"><HiOutlineLink/></button>
-                </Link>
                 <button className="seeMore__btn">Ver más</button> 
+                </Link>
             </div>
         </div>
 

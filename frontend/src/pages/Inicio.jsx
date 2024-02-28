@@ -1,12 +1,14 @@
-// import Contact from "../components/Contact/Contact"
+import ProjectsSection from '../components/projects-section/ProjectsSection';
+import Servicios from "../components/servicio/Servicios"
 
 const Inicio = () => {
 
   return (
     <div>
-      Inicio
+      <ProjectsSection />
+      <Servicios/>
     </div>
   )
 }
 
-export default Inicio
+export default Inicio;
