@@ -1,40 +1,60 @@
-  import Logo from "../../../public/img/Inicio/logo.png"
-  import img from "../../../public/img/Inicio/img-inicio.png"
-  import "./Header.css"
-  
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../../styles/header/header.css";
+import { Drawer, AppBar, Toolbar, IconButton, Box } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import NavListDrawer from "./NavListDrawer";
+import Logo from "../../../public/img/Inicio/logo.png";
+
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setOpen(false); 
+  };
+
+  const navLinks = [
+    { title: "INICIO", path: "/" },
+    { title: "ACERCA DE QSS", path: "/aboutus" },
+    { title: "PROYECTOS", path: "/projects" },
+  ];
+
+  const style = {
+    width: "50%",
+  };
+
   return (
-    <div className="container"> 
-        <div className="header">
-                <img src={Logo} className="image" alt="Logo" />
-                
-                    <ul className="nav">
-                        <li><a className="menu__link" href="#">PROYECTOS</a></li>
-                        <li><a className="menu__link" href="#">ACERCA DE QSS</a></li>
-                        <li><a className="menu__link" href="#">CONTACTO</a></li>
-                        
-                    </ul>
-                
-                <button>INGRESAR</button>
-        </div>
-        
-        
-          
-            <h1>QuantumScript Services</h1>
-          <div className="description">
-            
-            <div className="info">
-                <h3>Agencia de Desarrollo de Aplicaiones Web</h3>
-                <p>Diseñamos y desarrollamos páginas web personalizadas que no solo impresionan visualmente, 
-                  sino que tambien potencian tu presencia online generando oportunidades para tu negocio en el vasto mundo digital.</p>
-                <button className="btn-desc">CONTACTANOS</button>
+    <>
+      <AppBar position="static" sx={{ backgroundColor: "#242629" }}>
+        <Toolbar sx={{ padding: "0 2rem 0 0" }}>
+          <div className="containerStyle">
+            <div>
+              <Link to="/">
+                <img style={style} src={Logo} alt="" />
+              </Link>
             </div>
-            
-            <img src={img} alt="img" className="pic" />
-          
+            <IconButton
+              onClick={() => setOpen(true)}
+              sx={{ padding: 0, display: { xs: "flex", md: "none" } }}
+            >
+              <MenuIcon sx={{ color: "#FFF", fontSize: "2.5rem" }} />
+            </IconButton>
+            <Box sx={{ display: { xs: "none", md: "block" } }}>
+              {navLinks.map((item) => (
+                <Link to={item.path} key={item.title}>
+                  <span className="header__links">{item.title}</span>
+                </Link>
+              ))}
+            </Box>
           </div>
-    </div>
+        </Toolbar>
+      </AppBar>
+
+      <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
+        <NavListDrawer navLinks={navLinks} handleLinkClick={handleLinkClick} />
+      </Drawer>
+    </>
   );
 };
 
-export default Header
+export default Header;
