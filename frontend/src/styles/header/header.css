@@ -1,0 +1,26 @@
+.containerStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__links {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.header__links:hover {
+    border-bottom: solid #2CB67D 2px;
+    transition: 0.1s;
+}
+
+.header__links--mt {
+    color: #000;
+}
+
+.header__links--mt:hover {
+    border-bottom: solid #2CB67D 2px;
+    transition: 0.1s;
+}
+

@@ -1,12 +1,18 @@
-// import Contact from "../components/Contact/Contact"
+import Servicios from "../components/servicios/Servicios";
+import Landing from "../components/Landing/Landing";
+import ProjectsSection from '../components/projects-section/ProjectsSection';
+import Contact from "../components/contact/Contact"
 
 const Inicio = () => {
-
   return (
-    <div>
-      Inicio
-    </div>
-  )
-}
+    <>
+      <Landing/>
+      <Servicios />
+      <ProjectsSection />
+      <Contact/>
+    </>
+  );
+};
+ 
 
-export default Inicio
+export default Inicio;
