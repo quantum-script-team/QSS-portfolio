@@ -32,8 +32,7 @@ const Contact = () => {
     e.preventDefault();
     
     if (checkMail(error)) {
-      
-      console.log("llegue");
+
       emailjs
         .sendForm(service_id, template, form.current, {
           publicKey: public_key,
