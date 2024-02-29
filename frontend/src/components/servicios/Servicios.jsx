@@ -3,7 +3,7 @@ import { FaGlobe, FaCog, FaCloud } from 'react-icons/fa';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './servicio.css';
+import '../../styles/servicios/servicio.css';
 // import { Link } from "react-router-dom";
 
 const Servicios = () => {
