@@ -1,0 +1,145 @@
+.landing {
+  background-image: url(../../../public/img/Inicio/background.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing__h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.landing__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__description--h4 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+
+.landing__description--p {
+  margin-bottom: 1rem;
+}
+
+.landing__btn--contacto {
+  background-color: #2cb67d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 550;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+.landing__btn--contacto:active {
+    background-color: rgba(44, 182, 125, 0.68);
+}
+
+.landing__container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__container--img {
+  width: 300px;
+  animation: flotar 4s infinite;
+}
+
+@media (min-width: 500px) {
+  .landing__description {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    height: 300px;
+    padding: 2rem;
+  }
+
+  .landing__h1 {
+    font-size: 1.9rem;
+  }
+
+  .landing__description {
+    width: 50%;
+  }
+
+  .landing__description--h4 {
+    font-size: 1.1rem;
+  }
+
+  .landing__description--p {
+    font-size: 0.8rem;
+  }
+
+  .landing__btn--contacto {
+    padding: 0.8rem 1.5rem;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing {
+    align-items: center;
+    height: 454px;
+    padding: 2rem;
+  }
+
+  .landing__h1 {
+    font-size: 2.6rem;
+  }
+
+  .landing__description--h4 {
+    font-size: 1.5rem;
+  }
+
+  .landing__description--p {
+    font-size: 1rem;
+    width: 454px;
+  }
+
+  .landing__btn--contacto {
+    padding: 1rem 2rem;
+  }
+
+  .landing__container--img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .landing__h1 {
+    font-size: 3rem;
+  }
+
+  .landing__container--img {
+    width: 500px;
+  }
+}
+
+@keyframes flotar {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
