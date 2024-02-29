@@ -5,7 +5,7 @@ import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/Projects";
 import Error404 from "./pages/Error404";
 import Footer from "./components/Footer/Footer";
-import Contact from "./components/Contact/Contact";
+import Contact from "./components/contact/Contact";
 // import SwipeToSlide from "./carrusel/slider"
 // import "./carrusel/slider.css"
 import "slick-carousel/slick/slick.css";
