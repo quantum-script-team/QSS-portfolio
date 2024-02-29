@@ -4,7 +4,7 @@ import FormCountry from "./FormCountry";
 import { useState } from "react";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { public_key, template } from "../../utils/environmentVariables";
+import { public_key, service_id, template } from "../../utils/environmentVariables";
 const Contact = () => {
   const form = useRef();
   const [error, setError] = useState({
@@ -20,19 +20,22 @@ const Contact = () => {
   const checkMail = (obj) => {
     for (let key in obj) {
       if (obj[key] !== "") {
-        return false; // Si alguna propiedad no está vacía, retorna false
+        return false
       }
     }
     return true;
 
   }
+  console.log(error);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
     if (checkMail(error)) {
-
+      
+      console.log("llegue");
       emailjs
-        .sendForm(template, 'template_gbzxunm', form.current, {
+        .sendForm(service_id, template, form.current, {
           publicKey: public_key,
         })
         .then(

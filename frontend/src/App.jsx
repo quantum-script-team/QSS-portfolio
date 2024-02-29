@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 // import "./carrusel/slider.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
+import Contact from "./components/contact/Contact";
 // import Header from './components/Header/Header'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Error404 />} />
         </Routes>
       </Router>
