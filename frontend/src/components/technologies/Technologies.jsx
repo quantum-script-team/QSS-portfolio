@@ -1,5 +1,5 @@
 import TechnologiesSlider from "./TechnologiesSlider"
-
+import '../../styles/technologies/technologies.css'
 
 const Technologies = () => {
   

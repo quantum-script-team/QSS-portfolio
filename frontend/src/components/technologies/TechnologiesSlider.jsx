@@ -7,25 +7,69 @@ import "slick-carousel/slick/slick-theme.css";
 
 const TechnologiesSlider = () => {
     const settings = {
-        dots: true,
+        dots: false,
+        arrows: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
+        autoplaySpeed: 3500,
+        cssEase: "ease-in-out",
+        draggable: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                    autoplaySpeed: 3500,
+                    cssEase: "ease-in-out",
+                    draggable: false,
+                    pauseOnHover: false,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                    autoplaySpeed: 3500,
+                    cssEase: "ease-in-out",
+                    draggable: false,
+                    pauseOnHover: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                    autoplaySpeed: 3500,
+                    cssEase: "ease-in-out",
+                    draggable: false,
+                    pauseOnHover: false,
+                }
+            }
+        ]
     };
 
     return (
         <>
         <Slider {...settings}>
-            {technologies.map((technology) => {
-            <Technology
-                key={technology.id}
-                technologyData={technology}
-            ></Technology>;
-            })}
+            {technologies.map((technology) => (
+            <Technology key={technology.id} technologyData={technology} />
+            ))}
         </Slider>
         </>
     );
