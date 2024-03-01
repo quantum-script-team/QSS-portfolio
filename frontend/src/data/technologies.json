@@ -1,0 +1,124 @@
+{
+    "technologies": [
+        {
+            "id": 1,
+            "name": "HTML5",
+            "link": "https://developer.mozilla.org/es/docs/Web/HTML",
+            "logo": "axios-plain.svg"
+        },
+        {
+            "id": 2,
+            "name": "CSS3",
+            "link": "https://developer.mozilla.org/es/docs/Web/CSS",
+            "logo": ""
+        },
+        {
+            "id": 3,
+            "name": "JavaScript",
+            "link": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+            "logo": ""
+        },
+        {
+            "id": 4,
+            "name": "Bootstrap",
+            "link": "https://getbootstrap.com/",
+            "logo": ""
+        },
+        {
+            "id": 5,
+            "name": "Sass",
+            "link": "https://sass-lang.com/",
+            "logo": ""
+        },
+        {
+            "id": 6,
+            "name": "Git",
+            "link": "https://git-scm.com/",
+            "logo": ""
+        },
+        {
+            "id": 7,
+            "name": "GitHub",
+            "link": "https://github.com/",
+            "logo": ""
+        },
+        {
+            "id": 8,
+            "name": "React",
+            "link": "https://react.dev/",
+            "logo": ""
+        },
+        {
+            "id": 9,
+            "name": "TailwindCSS",
+            "link": "https://tailwindcss.com/",
+            "logo": ""
+        },
+        {
+            "id": 10,
+            "name": "Node.js",
+            "link": "https://nodejs.org/en",
+            "logo": ""
+        },
+        {
+            "id": 11,
+            "name": "Express",
+            "link": "https://expressjs.com/",
+            "logo": ""
+        },
+        {
+            "id": 12,
+            "name": "MongoDB",
+            "link": "https://www.mongodb.com/es",
+            "logo": ""
+        },
+        {
+            "id": 13,
+            "name": "MySQL",
+            "link": "https://dev.mysql.com/doc/",
+            "logo": ""
+        },
+        {
+            "id": 14,
+            "name": "Axios",
+            "link": "https://axios-http.com/es/",
+            "logo": ""
+        },
+        {
+            "id": 15,
+            "name": "Redux",
+            "link": "https://redux.js.org/",
+            "logo": ""
+        },
+        {
+            "id": 16,
+            "name": "Python",
+            "link": "https://www.python.org/doc/",
+            "logo": ""
+        },
+        {
+            "id": 17,
+            "name": "fastAPI",
+            "link": "https://fastapi.tiangolo.com/",
+            "logo": ""
+        },
+        {
+            "id": 18,
+            "name": "Npm",
+            "link": "https://www.npmjs.com/",
+            "logo": ""
+        },
+        {
+            "id": 19,
+            "name": "ChatGPT",
+            "link": "https://openai.com/chatgpt",
+            "logo": ""
+        },
+        {
+            "id": 20,
+            "name": "Figma",
+            "link": "https://www.figma.com/",
+            "logo": ""
+        }
+    ]
+}
