@@ -18,7 +18,7 @@
 .projects__name {
     font-weight: 600;
     font-size: 24px;
-    color: #AEAEAE;
+    color: #F5F5F5;
 }
 
 /* Project description */
@@ -66,6 +66,7 @@
     font-weight: 600;
     font-size: 24px;
     color: #7F5AF0;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -79,7 +80,7 @@
         grid-template-areas: 
         "img name"
         "img description"
-        "img btn"; 
+        "img empty"; 
         justify-items: center; 
     }
 
@@ -108,10 +109,15 @@
 
     /* Project buttons */
     .buttons__container { 
-        grid-area: btn;
+        grid-area: description;
         justify-self: start;
         align-self: center;
         height: 36px;
+    }
+
+    .link__btn {
+        padding: 0;
+        margin-top: 20px;
     }
 
     .seeMore__btn {
