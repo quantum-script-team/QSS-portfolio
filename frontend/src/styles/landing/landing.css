@@ -17,6 +17,7 @@
 .landing__description {
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .landing__description--h4 {
@@ -30,6 +31,7 @@
 }
 
 .landing__btn--contacto {
+  text-transform: uppercase;
   background-color: #2cb67d;
   color: #fff;
   font-size: 1rem;

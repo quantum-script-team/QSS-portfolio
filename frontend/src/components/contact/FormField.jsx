@@ -5,26 +5,22 @@ import { validation } from "../../validations/contact";
 const FormField = ({ id, label, type, placeholder, name, setError, error }) => {
   const [otherInputValue, setOtherInputValue] = useState("");
   const [isValidOtherInput, setIsValidOtherInput] = useState(true);
-  const [isFieldEmpty, setIsFieldEmpty] = useState(false)
-  
+  const [isFieldEmpty, setIsFieldEmpty] = useState(false);
 
   const handleOtherInputChange = (event) => {
     const inputValue = event.target.value;
 
     setOtherInputValue(inputValue);
     setIsValidOtherInput(true);
-
   };
 
   const handleOtherInputBlur = (event) => {
     // const {name} = event.target.name
     setIsValidOtherInput(!!otherInputValue.trim()); // Valida en el evento blur
-    setIsFieldEmpty(!otherInputValue.trim())
+    setIsFieldEmpty(!otherInputValue.trim());
 
-    validation(otherInputValue,event, setError )
-    
-    
-  }
+    validation(otherInputValue, event, setError);
+  };
   return (
     <>
       <TextField
@@ -38,12 +34,10 @@ const FormField = ({ id, label, type, placeholder, name, setError, error }) => {
         value={otherInputValue}
         onChange={handleOtherInputChange}
         onBlur={handleOtherInputBlur}
+        sx={{marginTop: "20px", width: "100%"}}
         required
-        
-        />
-         {error && error[id]  && (
-        <p style={{ color: "red" }}>{error[id]}</p>
-      )}
+      />
+      {error && error[id] && <span className="form__validation">{error[id]}</span>}
     </>
   );
 };

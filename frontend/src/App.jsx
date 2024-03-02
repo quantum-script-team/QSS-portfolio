@@ -6,8 +6,6 @@ import Projects from "./pages/Projects";
 import Error404 from "./pages/Error404";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/contact/Contact";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
 import Header from './components/Header/Header'
 
 function App() {
