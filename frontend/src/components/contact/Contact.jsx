@@ -14,7 +14,9 @@ const Contact = () => {
     email: "",
     phone: "",
     bussines: "",
-    message: ""
+    message: "",
+    country: ""
+
   })
 
   const checkMail = (obj) => {
@@ -26,11 +28,10 @@ const Contact = () => {
     return true;
 
   }
-  console.log(error);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
     if (checkMail(error)) {
 
       emailjs
@@ -75,13 +76,19 @@ const Contact = () => {
           setError={setError}
           error={error} />
         <div className="contact__form--group">
-          <FormCountry />
+          <FormCountry
+            setError={setError}
+            name="country"
+            error={error}
+          />
           <FormField
             id="phone"
             name="phone"
             label="Telefono"
             type="number"
-            setError={setError} />
+            setError={setError}
+            error={error}
+          />
         </div>
         <FormField
           id="bussines"
