@@ -18,28 +18,28 @@
           "id": 3,
           "name": "Apepería",
           "image": "apeperia.png",
-          "description": "",
+          "description": "Universo Apeperia, donde creamos aplicaciones personalizadas para cada persona! En Apeperia, nos destacamos por ofrecer soluciones a medida que se adaptan perfectamente a tus necesidades.",
           "link": "https://facuur001.github.io/appeperia.github.io/"
         },
         {
           "id": 4,
           "name": "Blog de café",
           "image": "cafe-blog.png",
-          "description": "",
+          "description": "Explora el apasionante mundo del café! Sumérgete en nuestro blog y descubre las historias detrás de cada taza, las tendencias más frescas y consejos para disfrutar al máximo de tu experiencia cafetera. ",
           "link": "https://blog-de-cafe-landing.netlify.app/"
         },
         {
           "id": 5,
           "name": "Org Workteam",
           "image": "org-workteam.png",
-          "description": "",
+          "description": "Plataforma definitiva para la organización eficiente de equipos de desarrollo! En Org, nos dedicamos a simplificar el proceso de colaboración, brindándote las herramientas necesarias para organizar personas y potenciar equipos de manera sin igual",
           "link": "https://org-sand-ten.vercel.app/"
         },
         {
           "id": 6,
           "name": "Alura Geek",
           "image": "alura-geek.png",
-          "description": "",
+          "description": " Bienvenido a AluraGeek, donde puedes explorar, visualizar y descubrir productos cautivadores.",
           "link": "https://e-commerce-github-io-iota.vercel.app/"
         },
         {

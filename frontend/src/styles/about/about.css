@@ -6,24 +6,24 @@
     color: #2D2D2D;
 }
 
-h1 {
+/* h1 {
     text-align: center;
-}
+} */
 
-.header {
+/* .header {
     background-color: #fff;
     color: #2D2D2D;
     padding: 10px;
     display: flex;
     justify-content: center;
-}
+} */
 
-.header a {
+/* .header a {
     color: #2D2D2D;
     background-color: #fff;
     text-decoration: none;
     margin-right: 10px;
-}
+} */
 
 .about-container {
     margin: 20px;
@@ -55,7 +55,7 @@ h1 {
     font-size: 20px;
 }
 
-.footer {
+/* .footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -63,7 +63,7 @@ h1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+} */
 
 .underline{
     width: 50%;
