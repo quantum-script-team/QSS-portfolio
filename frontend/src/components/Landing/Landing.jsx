@@ -13,7 +13,9 @@ const Landing = () => {
           Creamos páginas web impactantes que potencian tu presencia online,
           abriendo oportunidades para tu negocio en el vasto mundo digital.
         </p>
-        <button className="landing__btn--contacto">CONTACTANOS</button>
+        <a href="#contactus" className="landing__btn--contacto">
+          Contactanos
+        </a>
       </div>
       <div className="landing__container">
         <img

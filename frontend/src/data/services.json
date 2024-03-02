@@ -1,0 +1,29 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "img": "../../public/img/logos-services/www.svg",
+      "title": "Desarrollo de sitios web",
+      "description": "Construimos tu sitio web a tu medida"
+    },
+    {
+      "id": 2,
+      "img": "../../public/img/logos-services/mantenimiento.svg",
+      "title": "Mantenimiento de sitios",
+      "description": "Transformamos y gestionamos tu página web"
+    },
+    {
+      "id": 3,
+      "img": "../../public/img/logos-services/host.svg",
+      "title": "Hosting",
+      "description": "Servicio de Hosting rápido, seguro y confiable"
+    },
+    {
+      "id": 4,
+      "img": "../../public/img/logos-services/uxui.svg",
+      "title": "Diseño UX / UI",
+      "description": "Optimiza tu proyecto con experiencias intuitivas"
+    }
+  ]    
+}
+  

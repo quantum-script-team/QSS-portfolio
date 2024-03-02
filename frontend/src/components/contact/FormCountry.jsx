@@ -13,7 +13,7 @@ const FormCountry = () => {
     const selectedValue = event.target.value;
     setCountry(selectedValue);
     setIsValidCountry(true);
-    console.log("Selected Country:", selectedValue);
+    // console.log("Selected Country:", selectedValue);
   };
 
   const handleCountryBlur = () => {
@@ -21,7 +21,7 @@ const FormCountry = () => {
   };
 
   return (
-    <FormControl fullWidth>
+    <FormControl fullWidth sx={{marginTop: "20px", marginRight: {sm: "20px"}}}>
       <InputLabel id="demo-simple-select-label">Pais</InputLabel>
       <Select
         required
@@ -32,9 +32,10 @@ const FormCountry = () => {
         onChange={handleChangeCountry}
         onBlur={handleCountryBlur}
         color={isValidCountry ? "success" : "error"}
+        
       >
         {countries.map((country) => (
-          <MenuItem key={country.id} value={country.id}>
+          <MenuItem key={country.id} value={country.id} >
             {country.nombre}
           </MenuItem>
         ))}

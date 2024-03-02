@@ -1,12 +1,12 @@
-.icon{
+/* .icon{
 	width: 120px;
 	height: 120px;
 	color: red;
 }
 
-/* .slick-next{
+.slick-next{
 	display: none !important;
-} */
+}
 
 .react{
 	color: #61DAFB;
@@ -89,9 +89,9 @@
 		height: 120px;
 		color: red;
 	}
-	/* .slick-next{
+	.slick-next{
 		display: none !important;
-	} */
+	}
 	
 	.react{
 		color: #61DAFB;
@@ -168,16 +168,16 @@
 	}
 }
   
-  /* Estilos para tabletas */
+  Estilos para tabletas
   @media (max-width: 768px) {
 	.icon{
 		width: 100px;
 		height: 100px;
 		color: red;
 	}
-	/* .slick-next{
+	.slick-next{
 		display: none !important;
-	} */
+	}
 	
 	.react{
 		color: #61DAFB;
@@ -261,9 +261,9 @@
 		height: 45px;
 		color: red;
 	}
-	/* .slick-next{
+	.slick-next{
 		display: none !important;
-	} */
+	}
 	
 	.react{
 		color: #61DAFB;
@@ -338,4 +338,4 @@
 		font-size: 0.6em;
 		text-align: center;
 	}
-  }
+  } */

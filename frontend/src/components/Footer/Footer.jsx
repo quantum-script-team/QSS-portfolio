@@ -2,6 +2,7 @@ import "../../styles/footer/footer.css";
 import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineFacebook } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       <ul className="footer__social">
         <li>
           <a
-            href="#"
+            href="https://www.instagram.com/quantumscript.web"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__social--icon"
@@ -22,7 +23,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="mailto:contact.quantumscript@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__social--icon"
@@ -32,12 +33,22 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/quantumscript-services/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__social--icon"
           >
             <AiOutlineLinkedin />
+          </a>
+        </li>
+        <li>
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__social--icon"
+          >
+            <AiOutlineFacebook />
           </a>
         </li>
       </ul>

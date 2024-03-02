@@ -48,7 +48,7 @@ const Contact = () => {
 
 
   return (
-    <div className="contact__container">
+    <div className="contact__container" id="contactus">
       <h2 className="contacto__h2">Datos de Contacto</h2>
       <form className="contact__form" ref={form} onSubmit={sendEmail}>
         <FormField
