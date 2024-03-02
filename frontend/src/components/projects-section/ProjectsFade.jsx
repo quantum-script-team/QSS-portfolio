@@ -12,10 +12,10 @@ const ProjectsFade = ({ projectData }) => {
 
             <h2 className="projects__name">{projectData.name}</h2>
 
-            <p className="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eum fugiat, aut, atque quaerat accusamus deserunt tenetur porro exercitationem saepe ipsam! Ex odit suscipit minus ipsum fuga maxime id harum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam commodi suscipit, illum saepe ullam temporibus labore enim unde exercitationem.</p>
+            <p className="projects__description">{projectData.description}</p>
 
             <div className="buttons__container">    
-                <a className="link__btn" href={projectData.link}><SlLink /></a>
+                <a className="link__btn" href={projectData.link} target="_blank"><SlLink /></a>
                 <Link to="/projects">
                 <button className="seeMore__btn">Ver más</button> 
                 </Link>

@@ -5,6 +5,7 @@ import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/Projects";
 import Error404 from "./pages/Error404";
 import Footer from "./components/Footer/Footer";
+import Contact from "./components/contact/Contact";
 import Header from './components/Header/Header'
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
       <Header/>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Error404 />} />
         </Routes>
         <Footer />
