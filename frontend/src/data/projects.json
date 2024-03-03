@@ -25,7 +25,7 @@
           "id": 4,
           "name": "Blog de café",
           "image": "cafe-blog.png",
-          "description": "Explora el apasionante mundo del café! Sumérgete en nuestro blog y descubre las historias detrás de cada taza, las tendencias más frescas y consejos para disfrutar al máximo de tu experiencia cafetera. ",
+          "description": "Explora el apasionante mundo del café! Sumérgete en nuestro blog y descubre las historias detrás de cada taza, las tendencias más frescas y consejos para disfrutar al máximo de tu experiencia cafetera.",
           "link": "https://blog-de-cafe-landing.netlify.app/"
         },
         {
@@ -39,7 +39,7 @@
           "id": 6,
           "name": "Alura Geek",
           "image": "alura-geek.png",
-          "description": " Bienvenido a AluraGeek, donde puedes explorar, visualizar y descubrir productos cautivadores.",
+          "description": "Bienvenido a AluraGeek, donde puedes explorar, visualizar y descubrir productos cautivadores.",
           "link": "https://e-commerce-github-io-iota.vercel.app/"
         },
         {
