@@ -3,56 +3,56 @@
         {
           "id": 1,
           "name": "LTH Store",
-          "image": "lth-store.png",
+          "image": "/img/projects/lth-store.png",
           "description": "E-commerce dedicado a la exposición y gestión de productos para la minería de criptomonedas.",
           "link": "https://lthstore-v3.netlify.app/"
         },
         {
           "id": 2,
-          "name": "Palette generator app",
-          "image": "palette-generator-app.png",
-          "description": "",
+          "name": "Colors generator",
+          "image": "/img/projects/palette-generator-app.png",
+          "description": "Aplicación diseñada como herramienta complementaria para diseñadores y programadores que necesiten generar paletas de colores sólidos o combinaciones de colores degradados en código hexadecimal.",
           "link": "https://palettesgenerator.netlify.app/"
         },
         {
           "id": 3,
           "name": "Apepería",
-          "image": "apeperia.png",
+          "image": "/img/projects/apeperia.png",
           "description": "Universo Apeperia, donde creamos aplicaciones personalizadas para cada persona! En Apeperia, nos destacamos por ofrecer soluciones a medida que se adaptan perfectamente a tus necesidades.",
           "link": "https://facuur001.github.io/appeperia.github.io/"
         },
         {
           "id": 4,
           "name": "Blog de café",
-          "image": "cafe-blog.png",
-          "description": "Explora el apasionante mundo del café! Sumérgete en nuestro blog y descubre las historias detrás de cada taza, las tendencias más frescas y consejos para disfrutar al máximo de tu experiencia cafetera.",
+          "image": "/img/projects/cafe-blog.png",
+          "description": "Explora el apasionante mundo del café! Sumérgete en nuestro blog y descubre las historias detrás de cada taza, las tendencias más frescas y consejos para disfrutar al máximo de tu experiencia cafetera. ",
           "link": "https://blog-de-cafe-landing.netlify.app/"
         },
         {
           "id": 5,
           "name": "Org Workteam",
-          "image": "org-workteam.png",
+          "image": "/img/projects/org-workteam.png",
           "description": "Plataforma definitiva para la organización eficiente de equipos de desarrollo! En Org, nos dedicamos a simplificar el proceso de colaboración, brindándote las herramientas necesarias para organizar personas y potenciar equipos de manera sin igual",
           "link": "https://org-sand-ten.vercel.app/"
         },
         {
           "id": 6,
           "name": "Alura Geek",
-          "image": "alura-geek.png",
-          "description": "Bienvenido a AluraGeek, donde puedes explorar, visualizar y descubrir productos cautivadores.",
+          "image": "/img/projects/alura-geek.png",
+          "description": " Bienvenido a AluraGeek, donde puedes explorar, visualizar y descubrir productos cautivadores.",
           "link": "https://e-commerce-github-io-iota.vercel.app/"
         },
         {
           "id": 7,
           "name": "Did you watch it?",
-          "image": "did-u-watch-it.png",
+          "image": "/img/projects/did-u-watch-it.png",
           "description": "",
           "link": "https://duwi-frontend.vercel.app/Home"
         },
         {
           "id": 8,
           "name": "LadyFitLovers",
-          "image": "lady-fit-lovers.png",
+          "image": "/img/projects/lady-fit-lovers.png",
           "description": "",
           "link": "https://pf-front-five.vercel.app/"
         }

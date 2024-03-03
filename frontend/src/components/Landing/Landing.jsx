@@ -1,4 +1,4 @@
-import imgInicioAlt from "../../../public/img/Inicio/imgInicioAlt.png";
+import imgInicioAlt from "/img/Inicio/imgInicioAlt.png";
 import "../../styles/landing/landing.css";
 
 const Landing = () => {
