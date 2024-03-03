@@ -3,10 +3,15 @@ import FormField from "./FormField";
 import FormCountry from "./FormCountry";
 import { useState } from "react";
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { public_key, service_id, template } from "../../utils/environmentVariables";
+import Swal from 'sweetalert2'
+import { sendEmail } from "../../utils/sendEmail";
+import {  useNavigate } from "react-router";
+
 const Contact = () => {
   const form = useRef();
+  const navigate = useNavigate()
+
+
   const [error, setError] = useState({
 
     name: "",
@@ -19,46 +24,38 @@ const Contact = () => {
 
   })
 
-  const checkMail = (obj) => {
-    for (let key in obj) {
-      if (obj[key] !== "") {
-        return false
-      }
-    }
-    return true;
+  const [formData, setFormData] = useState({
+    name: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    bussines: "",
+    message: "",
+    country: ""
+  });
 
-  }
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    if (checkMail(error)) {
-
-      emailjs
-        .sendForm(service_id, template, form.current, {
-          publicKey: public_key,
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-    }
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    sendEmail(error,form, setFormData, navigate)
+  }
 
 
   return (
     <div className="contact__container" id="contactus">
       <h2 className="contacto__h2">Datos de Contacto</h2>
-      <form className="contact__form" ref={form} onSubmit={sendEmail}>
+      <form className="contact__form" ref={form} onSubmit={handleSubmit}>
         <FormField
           id="name"
           name="name"
           label="Nombre"
           type="text"
+          value={formData.name}
+          onChange={handleInputChange}
           setError={setError}
           error={error} />
         <FormField
@@ -66,6 +63,8 @@ const Contact = () => {
           name="lastName"
           label="Apellido"
           type="text"
+          value={formData.lastName}
+          onChange={handleInputChange}
           setError={setError}
           error={error} />
         <FormField
@@ -73,6 +72,8 @@ const Contact = () => {
           name="email"
           label="Email"
           type="text"
+          value={formData.email}
+          onChange={handleInputChange}
           setError={setError}
           error={error} />
         <div className="contact__form--group">
@@ -80,12 +81,16 @@ const Contact = () => {
             setError={setError}
             name="country"
             error={error}
+            value={formData.country}
+            onChange={handleInputChange}
           />
           <FormField
             id="phone"
             name="phone"
             label="Telefono"
             type="number"
+            value={formData.phone}
+            onChange={handleInputChange}
             setError={setError}
             error={error}
           />
@@ -95,6 +100,8 @@ const Contact = () => {
           name="bussines"
           label="Empresa/Razon Social"
           type="text"
+          value={formData.bussines}
+          onChange={handleInputChange}
           setError={setError}
           error={error} />
         <FormField
@@ -102,6 +109,8 @@ const Contact = () => {
           name="message"
           label="Mensaje"
           type="text"
+          value={formData.message}
+          onChange={handleInputChange}
           setError={setError}
           error={error} />
         <button type="submit" className="contact__btn">

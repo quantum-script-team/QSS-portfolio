@@ -13,7 +13,7 @@ const Inicio = () => {
       <Servicios />
       <Technologies/>
       <ProjectsSection />
-      <Contact/>
+      {/* <Contact/> */}
     </>
   );
 };
