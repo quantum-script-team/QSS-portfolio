@@ -2,37 +2,25 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { validation } from "../../validations/contact";
 
-const FormField = ({ id, label, type, placeholder, name, setError, error }) => {
-  const [otherInputValue, setOtherInputValue] = useState("");
-  const [isValidOtherInput, setIsValidOtherInput] = useState(true);
-  const [isFieldEmpty, setIsFieldEmpty] = useState(false);
-
-  const handleOtherInputChange = (event) => {
-    const inputValue = event.target.value;
-
-    setOtherInputValue(inputValue);
-    setIsValidOtherInput(true);
-  };
-
+const FormField = ({ id, label, type, placeholder, name, setError, error,onChange, value }) => {
   const handleOtherInputBlur = (event) => {
-    // const {name} = event.target.name
-    setIsValidOtherInput(!!otherInputValue.trim()); // Valida en el evento blur
-    setIsFieldEmpty(!otherInputValue.trim());
+    value = value.trim()
 
-    validation(otherInputValue, event, setError);
+    validation(value, event, setError);
   };
+
   return (
     <>
       <TextField
-        color={isValidOtherInput ? "success" : "error"}
+        color={error[name] ? "error" : "success"}
         id={id}
         label={label}
         type={type}
         name={name}
         variant="outlined"
         placeholder={placeholder}
-        value={otherInputValue}
-        onChange={handleOtherInputChange}
+        value={value}
+        onChange={onChange}
         onBlur={handleOtherInputBlur}
         sx={{marginTop: "20px", width: "100%"}}
         required
