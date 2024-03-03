@@ -5,4 +5,4 @@ const ProjectTitle = ({projectData}) => {
   )
 }
 
-export default ProjectTitle
+export default ProjectTitle 

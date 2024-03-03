@@ -98,7 +98,7 @@ const Contact = () => {
         <FormField
           id="bussines"
           name="bussines"
-          label="Empresa/Razon Social"
+          label="Empresa/Razón social"
           type="text"
           value={formData.bussines}
           onChange={handleInputChange}
