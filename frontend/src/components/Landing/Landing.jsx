@@ -1,4 +1,4 @@
-import imgInicioAlt from "../../../public/img/Inicio/imgInicioAlt.png";
+import imgInicioAlt from "/img/Inicio/imgInicioAlt.png";
 import "../../styles/landing/landing.css";
 
 const Landing = () => {
@@ -7,7 +7,7 @@ const Landing = () => {
       <div className="landing__description">
         <h1 className="landing__h1">QuantumScript Services</h1>
         <h4 className="landing__description--h4">
-          Agencia de Desarrollo de Aplicaiones Web
+          Agencia de Desarrollo de Aplicaciones Web
         </h4>
         <p className="landing__description--p">
           Creamos páginas web impactantes que potencian tu presencia online,
