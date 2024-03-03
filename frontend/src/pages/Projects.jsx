@@ -13,7 +13,7 @@ const Projects = () => {
             <MdOutlineArrowBackIosNew />
           </Link>
           <Link to={`/contact`} className="contact__link">
-            Contactanos
+            Contáctanos
           </Link>
         </div>
         <div id='projects__carousel'>

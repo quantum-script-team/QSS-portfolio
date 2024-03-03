@@ -9,6 +9,7 @@ export const validatePhone = (phone) => {
 };
 
 export const validation = (otherInputValue, event, setError) => {
+ 
   if (!otherInputValue) {
     setError((prevValue) => {
       return { ...prevValue, [event.target.name]: "Este campo es obligatorio" };
