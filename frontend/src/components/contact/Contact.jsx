@@ -86,7 +86,7 @@ const Contact = () => {
         <FormField
           id="bussines"
           name="bussines"
-          label="Empresa/Razon Social"
+          label="Empresa/Razón social"
           type="text"
           setError={setError}
           error={error} />
