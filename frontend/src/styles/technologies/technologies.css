@@ -9,18 +9,18 @@
 }
 
 .technology__logo{
-    width: 120px;
+    width: 8rem;
 }
 
 /* Add media queries below */
 @media (max-width: 765px) {
     .technology__logo{
-        width: 60px;
+        width: 6rem;
     }
 }
 
 @media (max-width: 480px) {
     .technology__logo{
-        width: 52px;
+        width: 4rem;
     }
 }
