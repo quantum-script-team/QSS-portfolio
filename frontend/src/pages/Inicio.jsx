@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
 import Landing from "../components/Landing/Landing";
-import About from "../components/About/About";
+import AboutUs from "../components/About/AboutUs";
 import Servicios from "../components/servicios/Servicios";
 import Technologies from "../components/technologies/Technologies";
 import ProjectsSection from "../components/projects-section/ProjectsSection";
@@ -34,7 +34,7 @@ const Inicio = () => {
   return (
     <>
       <Landing />
-      <About />
+      <AboutUs />
       <Servicios />
       <Technologies />
       <ProjectsSection />
