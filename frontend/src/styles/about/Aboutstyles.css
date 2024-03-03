@@ -1,15 +1,16 @@
-.about-container {
+.about__page__container {
     text-align: center;
     font-family: 'Exo', Arial, sans-serif;
     color: #ffffff;
     background-color: #2D2D2D;
     padding: 20px;
-    
   }
   
   .card-group {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
     justify-content: space-between;
     background-color: #ffffff;
     color: #2D2D2D;
@@ -21,13 +22,13 @@
   .card {
     width: 30%;
     max-width: auto;
-    height: 300px; /* Altura fija para las tarjetas */
+    height: 250px; /* Altura fija para las tarjetas */
     box-sizing: border-box;
     margin-bottom: 20px;
     background-color: #ffffff;
+    border: 1px solid #DDDDDD;
     color: #2D2D2D;
-    border-radius: 5%;
-    overflow: hidden;
+    border-radius: .5rem;
     display: flex;
     flex-direction: row;
     transition: transform 0.3s ease-in-out;
@@ -40,7 +41,7 @@
   }
   
   .card-image {
-    width: 33%;
+    width: 40%;
     height: 100%;
     overflow: hidden;
   }
@@ -49,23 +50,56 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0;
+    border-radius: .5rem 0 0 .5rem;
   }
   
   .card-description {
     width: 60%;
     height: 100%;
-    padding: 15px;
+    padding: 1rem;
     text-align: left;
+  }
+
+  #back__button{
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #2D2D2D;
   }
   
   /* Estilos responsive para tablet y dispositivos más pequeños */
-  @media only screen and (max-width: 768px) {
+
+  @media screen and (max-width: 1024px){
+    .card{
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      height: 400px;
+    }
+    .card-image, .card-description{
+      width: 100%;
+    }
+    .card-image{
+      height: 60%;
+    }
+    .card-description{
+      height: 40%;
+    }
+    .card-image img {
+      border-radius: .5rem .5rem 0 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     .card {
       width: 48%;
       margin: 1%;
+      display: flex;
       flex-direction: column;
-      height: 300px; /* Mantiene la altura fija en tablet */
+      align-items: stretch;
+      justify-content: space-evenly;
+      height: 350px; /* Mantiene la altura fija en tablet */
     }
   
     .card-image,
@@ -73,26 +107,29 @@
       width: 100%;
       height: 50%; /* Ajusta la altura para ocupar la mitad en tablet */
     }
+    .card-description{
+      padding: 1rem;
+    }
   }
-  
-  /* Estilos responsive para celular */
-  /* Estilos responsive para celular */
-  @media only screen and (max-width: 480px) {
+
+  @media screen and (max-width: 576px) {
     .card {
-      width: 80%;
-      max-width: none;
+      width: 100%;
       flex-direction: column;
       height: 300px; /* Mantiene la altura fija en celular */
-      margin: auto; /* Centra horizontalmente */
+      margin: 1rem; /* Centra horizontalmente */
       display: flex; /* Centra verticalmente */
       align-items: center; /* Centra verticalmente */
-      justify-content: center; /* Centra verticalmente */
+      justify-content: space-between; /* Centra verticalmente */
     }
   
     .card-image,
     .card-description {
       width: 100%;
       height: 50%; /* Ajusta la altura para ocupar la mitad en celular */
+    }
+    .card-description{
+      padding: 1rem;
     }
   }
   
