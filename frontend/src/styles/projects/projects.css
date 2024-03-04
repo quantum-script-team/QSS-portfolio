@@ -1,19 +1,19 @@
 #projects_section{
-    background-color: #242624;
+    background-color: #2D2D2D;
     min-height: 100vh;
 }
 
 #projects__section h1{
-    background-color: #242624;
+    background-color: #2D2D2D;
     color: #F5F5F5;
     text-align: center;
     margin: 0;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #projects__actions{
-    background-color: #242624;
+    background-color: #2D2D2D;
     display: flex;
     flex-direction: row;
     align-items: center;

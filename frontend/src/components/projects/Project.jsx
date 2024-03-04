@@ -17,7 +17,7 @@ const Project = ({ projectData }) => {
         image={projectData.image}
         title={projectData.name}
       />
-      <CardContent sx={{ backgroundColor: "#2d2d2d", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", padding: "1.5rem"}}>
+      <CardContent sx={{ backgroundColor: "#242629", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", padding: "1.5rem"}}>
         <Typography
           gutterBottom
           variant="h6"
