@@ -1,45 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { FaGlobe, FaCog, FaCloud } from 'react-icons/fa';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import '../../styles/servicios/servicio.css';
-// import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../../styles/servicios/servicio.css";
+import { services } from "../../data/services.json";
 
 const Servicios = () => {
-  const servicios = [
-    <div className="card">
-      <div className="imageContainer">
-        <FaGlobe className="image" />
-      </div>
-      <h2 className="title">Desarrollo de sitios web</h2>
-      <p className="text">Construimos tu sitio web a tu medida</p>
-      {/* <Link to=""> */ } 
-        <button className="button" >Consulta</button>
-      {/* </Link> */}
-    </div>,
-    <div className="card">
-      <div className="imageContainer">
-        <FaCog className="image" />
-      </div>
-      <h2 className="title">Mantenimiento de sitios</h2>
-      <p className="text">Transformamos y gestionamos tu página web</p>
-      {/* <Link to=""> */}
-        <button className="button" >Consulta</button>
-      {/* </Link> */}
-    </div>,
-    <div className="card">
-      <div className="imageContainer">
-        <FaCloud className="image" />
-      </div>
-      <h2 className="title">Hosting</h2>
-      <p className="text">Servicio de Hosting rápido, seguro y confiable</p>
-      {/* <Link to=""> */}
-        <button className="button" >Consulta</button>
-      {/* </Link> */}
-    </div>
-  ];
-
   const [slidesToShow, setSlidesToShow] = useState(1);
 
   useEffect(() => {
@@ -55,34 +21,42 @@ const Servicios = () => {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
   };
 
   return (
-    <>
-      <h1 className='titlePrincipal'>SERVICIOS</h1>
+    <div className="services">
+      <h1 className="services__h1">SERVICIOS</h1>
       <Slider {...settings}>
-        {servicios.map((ser, index) => (
-          <div key={index}>
-            {ser}
+        {services.map((serv) => (
+          <div className="services__card" key={serv.id}>
+            <div className="services__card--container">
+              <div className="services__container--img">
+                <img src={serv.img} alt="LogoWWW" className="services__img" />
+              </div>
+              <h2 className="services__title">{serv.title}</h2>
+              <p className="services__text">{serv.description}</p>
+              <a href="#contactus" className="services__btn">Consulta</a>
+            </div>
           </div>
         ))}
       </Slider>
-    </>
+    </div>
   );
 };
 

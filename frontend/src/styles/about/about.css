@@ -1,42 +1,27 @@
-.app-container {
+.about__section__container {
     margin: 0;
     padding: 0;
     font-family: 'Exo', Arial, sans-serif;
-    background-color: #fff;
-    color: #2D2D2D;
-}
-
-h1 {
-    text-align: center;
+    background-color: #F5F5F5;
+    color: #222;
 }
 
 .header {
-    background-color: #fff;
+    background-color: #F5F5F5;
     color: #2D2D2D;
-    padding: 10px;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 550;
     display: flex;
     justify-content: center;
 }
 
-.header a {
-    color: #2D2D2D;
-    background-color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
 .about-container {
-    margin: 20px;
-    background-color: #fff; 
-    padding: 20px;
+    margin: 1.5rem;
+    background-color: #F5F5F5; 
+    padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.about-container h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2D2D2D; 
 }
 
 .about-container p {
@@ -46,27 +31,23 @@ h1 {
     color: #2D2D2D;
 }
 
-.about-container button {
-    background-color: #fff; 
+.about-container .about__link{
+    background-color: #F5F5F5; 
     color: #2CB67D; 
     border: none;
-    padding: 10px 30px;
+    padding: .5rem 2rem;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.about__link:hover{
+    border-bottom: 1px solid #2CB67D;
 }
 
 .underline{
-    width: 50%;
+    margin: .5rem 1rem;
 }
 
 /* Responsive styles */
@@ -87,12 +68,6 @@ h1 {
     .about-container button {
         padding: 8px 20px; /* Adjust padding for smaller screens */
         font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .underline {
-        width: 50%; /* Adjust width for smaller screens */
-        margin-top: 5px;
-        border: 1px solid #2D2D2D;
     }
 }
 

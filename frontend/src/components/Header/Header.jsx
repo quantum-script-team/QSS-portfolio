@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/header/header.css";
 import { Drawer, AppBar, Toolbar, IconButton, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavListDrawer from "./NavListDrawer";
-import Logo from "../../../public/img/Inicio/logo.png";
+import Logo from "/img/Inicio/logo.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
 
   const navLinks = [
     { title: "INICIO", path: "/" },
-    { title: "ACERCA DE QSS", path: "/aboutus" },
+    { title: "ACERCA DE QSS", path: "/about" },
     { title: "PROYECTOS", path: "/projects" },
   ];
 

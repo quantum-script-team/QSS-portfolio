@@ -1,5 +1,5 @@
 .landing {
-  background-image: url(../../../public/img/Inicio/background.png);
+  background-image: url(/img/Inicio/background.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +17,7 @@
 .landing__description {
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .landing__description--h4 {
@@ -30,6 +31,7 @@
 }
 
 .landing__btn--contacto {
+  text-transform: uppercase;
   background-color: #2cb67d;
   color: #fff;
   font-size: 1rem;
@@ -43,7 +45,7 @@
   outline: none;
 }
 .landing__btn--contacto:active {
-    background-color: rgba(44, 182, 125, 0.68);
+  background-color: rgba(44, 182, 125, 0.68);
 }
 
 .landing__container {
@@ -66,45 +68,54 @@
 
 @media (min-width: 768px) {
   .landing {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    gap: 2rem;
-    height: 300px;
+    justify-content: center;
+    gap: 3rem;
     padding: 2rem;
+    height: calc(100vh - 97px);
   }
 
   .landing__h1 {
-    font-size: 1.9rem;
+    font-size: 3rem;
   }
 
   .landing__description {
-    width: 50%;
+    text-align: center;
+    width: 80%;
   }
 
   .landing__description--h4 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .landing__description--p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .landing__container--img {
+    width: 400px;
   }
 
   .landing__btn--contacto {
-    padding: 0.8rem 1.5rem;
-    align-self: flex-start;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .landing {
     align-items: center;
-    height: 454px;
+    flex-direction: row;
     padding: 2rem;
+    height: calc(100vh - 97px);
   }
 
   .landing__h1 {
     font-size: 2.6rem;
+  }
+
+  .landing__description {
+    text-align: start;
+    width: 80%;
   }
 
   .landing__description--h4 {
@@ -118,6 +129,7 @@
 
   .landing__btn--contacto {
     padding: 1rem 2rem;
+    align-self: flex-start;
   }
 
   .landing__container--img {
@@ -136,10 +148,11 @@
 }
 
 @keyframes flotar {
-    0%, 100% {
-      transform: translateY(0); 
-    }
-    50% {
-      transform: translateY(-10px); 
-    }
+  0%,
+  100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px);
+  }
+}

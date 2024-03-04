@@ -1,0 +1,18 @@
+.arrow-up {
+  width: 35px;
+  height: auto;
+  color: #7f5af0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.arrow-up:hover {
+  color: #bb94f6;
+}
+
+.arrow-up:active {
+  color: #2cb67d;
+}
