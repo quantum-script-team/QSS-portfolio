@@ -9,7 +9,7 @@ const Error404 = () => {
         <img className='error404__img' src={error} alt="error404" />
       </div>
       <div className='error404__container--description'>
-        <p className='error404__text'>Lo siento No podemos encontrar la página que estás buscando.</p>
+        <p className='error404__text'>Lo sentimos, no podemos encontrar la página que estás buscando.</p>
         <Link to="/" className='error404__btn'>Volver</Link>
       </div>
     </div>
