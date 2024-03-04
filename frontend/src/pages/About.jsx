@@ -8,13 +8,13 @@ const About = () => {
 
   return (
     <section className="about__page__container">
+      <h1>Equipo de desarrolladores</h1>
       <div id="back__container">
         <Link id="back__button" to='/'>
           <MdOutlineArrowBackIosNew />
         </Link>
       </div>
       <div id="about__description">
-        <h1>Equipo de desarrolladores</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minus quam aspernatur aut eos dicta
           numquam consequatur soluta, perspiciatis at atque ipsam explicabo veniam harum tempore neque alias

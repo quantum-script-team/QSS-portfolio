@@ -8,11 +8,13 @@
 .header__links {
     margin-left: 20px;
     color: #fff;
+    border-bottom: 1px solid transparent;
+    padding-bottom: .5rem;
+    transition: border-bottom .5s;
 }
 
 .header__links:hover {
     border-bottom: solid #2CB67D 2px;
-    transition: 0.1s;
 }
 
 .header__links--mt {

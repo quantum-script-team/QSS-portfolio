@@ -17,7 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    background-color: #2d2d2d;
+    background-color: #242629;
 }
 
 .project__link{
@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
     
-    box-shadow: 0 0 0 #111;
+    box-shadow: 0 0 0 transparent;
     transition: box-shadow .5s;
 }
 
