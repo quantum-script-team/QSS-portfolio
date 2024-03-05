@@ -33,15 +33,20 @@
 #about__description{
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
+  align-items: center;
+  /* justify-content: space-between; */
   gap: 1rem;
-  margin: 2rem 6rem;
+  margin: 2rem 0;
+}
+
+#about__description p{
+  width: 80%;
 }
 
 h1{
   font-size: 3rem;
 }
+
 #about__description p{
   text-align: start;
 }
@@ -51,7 +56,7 @@ h1{
   flex-wrap: wrap;
   flex-direction: row;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #f5f5f5;
   color: #2D2D2D;
   padding: 1.5rem;
@@ -60,8 +65,6 @@ h1{
   
   .card {
     width: 30%;
-    max-width: auto;
-    height: 250px; /* Altura fija para las tarjetas */
     box-sizing: border-box;
     margin-bottom: 20px;
     background-color: #f5f5f5;
@@ -70,6 +73,8 @@ h1{
     border-radius: .5rem;
     display: flex;
     flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
     transition: transform 0.3s ease-in-out;
     font-family: 'Exo', Arial, sans-serif;
   }
@@ -93,7 +98,6 @@ h1{
   
   .card-description {
     width: 60%;
-    height: 100%;
     padding: 1rem;
     text-align: left;
   }
@@ -106,16 +110,12 @@ h1{
       flex-direction: column;
       align-items: stretch;
       justify-content: space-between;
-      height: 400px;
     }
     .card-image, .card-description{
       width: 100%;
     }
     .card-image{
       height: 60%;
-    }
-    .card-description{
-      height: 40%;
     }
     .card-image img {
       border-radius: .5rem .5rem 0 0;
@@ -129,14 +129,12 @@ h1{
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      justify-content: space-evenly;
-      height: 350px; /* Mantiene la altura fija en tablet */
+      justify-content: space-between;
     }
   
     .card-image,
     .card-description {
       width: 100%;
-      height: 50%; /* Ajusta la altura para ocupar la mitad en tablet */
     }
     .card-description{
       padding: 1rem;
@@ -146,18 +144,16 @@ h1{
   @media screen and (max-width: 576px) {
     .card {
       width: 100%;
+      margin: 1rem;  
+      display: flex; 
       flex-direction: column;
-      height: 300px; /* Mantiene la altura fija en celular */
-      margin: 1rem; /* Centra horizontalmente */
-      display: flex; /* Centra verticalmente */
-      align-items: center; /* Centra verticalmente */
-      justify-content: space-between; /* Centra verticalmente */
+      align-items: stretch; 
+      justify-content: space-between; 
     }
   
     .card-image,
     .card-description {
       width: 100%;
-      height: 50%; /* Ajusta la altura para ocupar la mitad en celular */
     }
     .card-description{
       padding: 1rem;

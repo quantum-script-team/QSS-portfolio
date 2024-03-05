@@ -1,10 +1,9 @@
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import '../../styles/about/aboutCard.css'
 
-const CardAbout = ({isLastInGroup, memberData }) => {
-
+const CardAbout = ({ memberData }) => {
   return (
-    <div className={`card ${isLastInGroup ? 'last-in-group' : ''}`}>
+    <div className={`card`}>
       <div className="card-image">
         <img src={`/img/miembros/${memberData.photo}`} alt={memberData.name} />
       </div>

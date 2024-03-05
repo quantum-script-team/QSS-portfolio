@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section className="about__page__container">
-      <h1>Equipo de desarrolladores</h1>
+      <h1>Nuestro equipo</h1>
       <div id="back__container">
         <Link id="back__button" to='/'>
           <MdOutlineArrowBackIosNew />
@@ -26,12 +26,11 @@ const About = () => {
         </p>
       </div>
       <article className="card-group">
-        {companyTeam.map((member, index) => (
+        {companyTeam.map((member) => (
           <CardAbout
             key={member.id}
             memberNumber={member.id}
             memberData={member}
-            isLastInGroup={index % 2 !== 0 || index === companyTeam.length - 1}
           />
         ))}
       </article>
@@ -40,3 +39,5 @@ const About = () => {
 };
 
 export default About;
+
+/* isLastInGroup={index % 2 !== 0 || index === companyTeam.length - 1} */
