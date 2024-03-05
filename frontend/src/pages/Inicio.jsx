@@ -41,7 +41,7 @@ const Inicio = () => {
       <Contact />
 
       {showArrow && (
-        <Link to="landing" smooth={true} duration={1000} offset={-50}>
+        <Link to="landing" smooth={true} duration={1000} offset={-100}>
           <IoArrowUpCircleOutline className="arrow-up" onClick={scrollToTop} />
         </Link>
       )}

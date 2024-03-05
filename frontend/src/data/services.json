@@ -23,6 +23,12 @@
       "img": "/img/logos-services/uxui.svg",
       "title": "Diseño UX / UI",
       "description": "Optimiza tu proyecto con experiencias intuitivas"
+    },
+    {
+      "id": 5,
+      "img": "/img/logos-services/wordpress.svg",
+      "title": "Desarrollo en WordPress",
+      "description": "Transformamos ideas en sitios impactantes y funcionales."
     }
   ]    
 }

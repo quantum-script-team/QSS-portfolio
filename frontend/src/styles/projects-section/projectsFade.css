@@ -80,7 +80,7 @@
         grid-template-areas: 
         "img name"
         "img description"
-        "img empty"; 
+        "img btn"; 
         justify-items: center; 
     }
 
@@ -109,15 +109,10 @@
 
     /* Project buttons */
     .buttons__container { 
-        grid-area: description;
+        grid-area: btn;
         justify-self: start;
         align-self: center;
         height: 36px;
-    }
-
-    .link__btn {
-        padding: 0;
-        margin-top: 20px;
     }
 
     .seeMore__btn {
@@ -131,10 +126,5 @@
     /* Project description */
     .projects__description {
         font-size: 16px;
-    }
-
-    /* Project Buttons */
-    .link__btn {
-        font-size: 2rem;
     }
 }
