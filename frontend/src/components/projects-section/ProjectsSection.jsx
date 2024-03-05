@@ -4,7 +4,7 @@ import ProjectsInfo from "./ProjectsInfo";
 const ProjectsSection = () => {
     return (
         <div className='projects__section'>
-            <h1 className="projects__title">PROYECTOS DESTACADOS</h1>
+            <h1 className="projects__title">Portfolio</h1>
 
             <div className="projects__container">
                 <ProjectsInfo/>
