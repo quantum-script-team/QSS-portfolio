@@ -41,16 +41,6 @@ const Footer = () => {
             <AiOutlineLinkedin />
           </a>
         </li>
-        <li>
-        <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__social--icon"
-          >
-            <AiOutlineFacebook />
-          </a>
-        </li>
       </ul>
     </div>
   );

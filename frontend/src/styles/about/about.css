@@ -9,11 +9,12 @@
 .header {
     background-color: #F5F5F5;
     color: #2D2D2D;
-    padding-top: 2rem;
+    padding: 2rem 1.5rem;
     font-size: 3rem;
     font-weight: 550;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .about-container {
@@ -50,6 +51,8 @@
     margin: .5rem 1rem;
 }
 
+
+
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
     .about-container {
@@ -72,6 +75,8 @@
 }
 
 @media only screen and (max-width: 480px) {
+    
+
     .about-container h1 {
         font-size: 24px; /* Further adjust font size for smaller screens */
     }
@@ -87,3 +92,8 @@
     }
 }
 
+@media (max-width: 400px) { 
+    .header {
+        font-size: 2.5rem;
+    }
+}
