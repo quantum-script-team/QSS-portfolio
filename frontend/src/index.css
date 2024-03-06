@@ -1,8 +1,91 @@
+:root {
+
+  /* Variables Generales */
+  --fontFamily: 'Exo', sans-serif;
+  --colorWhite: #FFF;
+  --colorBlack: #000;
+  --backroundImage: url(/img/Inicio/background.png);
+  --backgroundBtnPrimary: #2cb67d;
+  --backgroundTransparent: transparent;
+  --backgroundBtnPrimaryHover: #2CB67D;
+  --backgroundBtnPrimaryActive: rgba(44, 182, 125, 0.68);
+  
+  /* Variables Acerca de QSS */
+  --colorTitlesAbout: #2D2D2D;
+  --colorBoxShadowBtnCardQSSHover: #7F5AF0;
+  --colorBoxShadowAcercaQSS: rgba(0, 0, 0, 0.1);
+  --colorTextAcercaQSS: #2D2D2D;
+  --colorBackBtnAcercaQSS: #f5f5f5; 
+  --colorBackBtnAcercaQSSHover: #2CB67D; 
+  --colorTextPageAbout: #f5f5f5;
+  --colorTextTitleCardDev: #2D2D2D;
+  --colorIconAbout: #7F5AF0;
+  --colorBtnTextAcercaQSS: #2CB67D;
+  --backroundPageAcercaQSS: #2D2D2D;
+  --backroundAcercaQSS: #F5F5F5;
+  --backroundCardContainerQSS: #f5f5f5;
+  --backroundCardQSS: #f5f5f5;
+  --backroundCardQSSBorder: #DDDDDD;
+
+  /* Variables Servicios */
+  --backgroundServices: #242629;
+
+  /* Variables Technologies */
+  --backgroundTechnologies: #f5f5f5;
+  
+  /* Variables Portfolio */
+  --colorTitleProject: #F5F5F5;
+  --colorTextProject: #F5F5F5;
+  --colorBtnLink: #7F5AF0;
+  --colorBtnLinkBorder: #2CB67D;
+  --colorViewMore: #7F5AF0;
+  --colorBorderCard: #2d2d2d;
+  --colorTitleCard: #f5f5f5;
+  --colorProjectActions: #242629;
+  --colorIconProjectLink: #7F5AF0;
+  --colorIconProjectLinkHover: #2CB67D;
+  --colorProjectCardMediaQueries600: #2d2d2d;
+  --colorProjectCardMediaQueries480: #2d2d2d;
+  --colorIconAction: #F5F5F5;
+  --colorBorderAction: #F5F5F5;
+  --colorBtnActionHover: #2CB67D;
+  --backgroundPortfolio: #242629;
+  --backroundProjectSection: #2D2D2D;
+  --backroundProjectSectionH1: #2D2D2D;
+  --backroundActions: #2D2D2D;
+  --backgroundContainerProjects: #2D2D2D;
+
+  /* Variables Contact */
+  --colorTitleContact: #2D2D2D;
+  --colorInputValidation: red;
+
+  /* Variables  Footer */
+  --backgroundFooter: #242629;
+  --colorIconsFooter: #7f5af0;
+
+  /* Variables ArrowUP */
+  --ColorArrowUp: #7f5af0;
+  --ColorArrowUpHover: #bb94f6;
+  --ColorArrowUpActive: #2cb67d;
+
+  /* Variables Scroll Bar */
+  --colorScrollBarTrack: #f1f1f1;
+  --colorScrollBarThumb: #888;
+  --colorScrollBarCorner: #f1f1f1;
+
+  /* Variables Error 404 */
+  --backgroundError404: #343434;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Exo';
+	font-family: var(--fontFamily);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -15,21 +98,22 @@ ul {
 
 
 
+/* Ancho y color de la barra de desplazamiento */
 ::-webkit-scrollbar {
 	width: 12px;
   }
   
   ::-webkit-scrollbar-track {
-	background: #f1f1f1;
+	background: var(--colorScrollBarTrack);
   }
   
   /* Color de la manija/dragger de la barra de desplazamiento */
   ::-webkit-scrollbar-thumb {
-	background: #888;
+	background: var(--colorScrollBarThumb);
   }
   
   /* Estilo de la esquina del área de desplazamiento */
   ::-webkit-scrollbar-corner {
-	background: #f1f1f1;
+	background: var(--colorScrollBarCorner);
   }
   

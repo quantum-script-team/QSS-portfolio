@@ -15,10 +15,10 @@ const CardAbout = ({ memberData }) => {
           </div>
           <div className="card__links">
             <a href={memberData.linkedIn} target="_blank" rel="noreferrer">
-              <AiOutlineLinkedin size={"2em"} style={{color: "#7F5AF0"}} />
+              <AiOutlineLinkedin className="icon__card--dev" size={"2em"}/>
             </a>
             <a href={memberData.github} target="_blank" rel="noreferrer">
-              <AiOutlineGithub size={"2em"} style={{color: "#7F5AF0"}} />
+              <AiOutlineGithub className="icon__card--dev" size={"2em"} />
             </a>
           </div>
         </div>

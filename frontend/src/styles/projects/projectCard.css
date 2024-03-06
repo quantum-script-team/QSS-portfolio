@@ -4,12 +4,12 @@
 
 .project__card{
     margin: 1rem;
-    border: 1px solid #2d2d2d;
+    border: 1px solid var(--colorBorderCard);
 }
 
 
 .project__title{
-    color: #f5f5f5;
+    color: var(--colorTitleCard);
 }
 
 .project__actions{
@@ -17,7 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    background-color: #242629;
+    background-color: var(--colorProjectActions);
 }
 
 .project__link{
@@ -25,7 +25,7 @@
     margin: 0;
     padding: .5rem;
     text-decoration: none;
-    color: #7F5AF0;
+    color: var(--colorIconProjectLink);
     border-radius: .5rem;
 
     display: flex;
@@ -38,20 +38,20 @@
 }
 
 .project__link:hover{
-    box-shadow: 0 0 .5rem #2CB67D;
+    box-shadow: 0 0 .5rem var(--colorIconProjectLinkHover);
 }
 
 /* Márgenes de cards en responsive */
 @media (max-width: 600px) {
     .project__card{
         margin: .5rem;
-        border: 1px solid #2d2d2d;
+        border: 1px solid var(--colorProjectCardMediaQueries600);
     }
 }
 @media (max-width: 480px) {
     .project__card{
         margin: 0 .5rem;
-        border: 1px solid #2d2d2d;
+        border: 1px solid var(--colorProjectCardMediaQueries480);
     }
 }
 

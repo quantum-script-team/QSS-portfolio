@@ -1,14 +1,9 @@
 .about__section__container {
-    margin: 0;
-    padding: 0;
-    font-family: 'Exo', Arial, sans-serif;
-    background-color: #F5F5F5;
-    color: #222;
+    background-color: var(--BackroundAcercaQSS);
 }
 
 .header {
-    background-color: #F5F5F5;
-    color: #2D2D2D;
+    color: var(--colorTitlesAbout);
     padding: 2rem 1.5rem;
     font-size: 3rem;
     font-weight: 550;
@@ -19,9 +14,8 @@
 
 .about-container {
     margin: 1.5rem;
-    background-color: #F5F5F5; 
     padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--colorBoxShadowAcercaQSS);
     text-align: center;
 }
 
@@ -29,22 +23,21 @@
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 30px;
-    color: #2D2D2D;
+    color: var(--colorTextAcercaQSS);
 }
 
 .about-container .about__link{
-    background-color: #F5F5F5; 
-    color: #2CB67D; 
+    color: var(--colorBtnTextAcercaQSS); 
     border: none;
     padding: .5rem 2rem;
     cursor: pointer;
     font-size: 1.5rem;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid var(--backgroundTransparent);
     transition: border-bottom .5s;
 }
 
 .about__link:hover{
-    border-bottom: 1px solid #2CB67D;
+    border-bottom: 1px solid var(--colorBtnTextAcercaQSS);
 }
 
 .underline{
