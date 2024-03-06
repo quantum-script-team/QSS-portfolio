@@ -64,4 +64,4 @@ export const sendEmail = (error,form, setFormData, navigate) => {
             })          },
             );
           }
-        };
+        }; 
