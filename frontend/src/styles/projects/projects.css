@@ -1,11 +1,11 @@
 #projects_section{
-    background-color: #2D2D2D;
+    background-color: var(--backroundProjectSection);
     min-height: 100vh;
 }
 
 #projects__section h1{
-    background-color: #2D2D2D;
-    color: #F5F5F5;
+    background-color: var(--backroundProjectSectionH1);
+    color: var(--colorWhite);
     text-align: center;
     margin: 0;
     padding: 1rem;
@@ -13,7 +13,7 @@
 }
 
 #projects__actions{
-    background-color: #2D2D2D;
+    background-color: var(--backroundActions);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,14 +25,16 @@
     padding: .5rem;
     font-size: 1.5rem;
     border-radius: .5rem;
-    border: 1px solid #F5F5F5;
-    color: #f5f5f5;
+    border: 1px solid var(--colorBorderAction);
+    color: var(--colorIconAction);
     transition: color .5s;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: 1s;
 }
 .contact__link:hover{
-    color: #2CB67D;
+    border: 1px solid var(--colorBtnActionHover);
+    color: var(--colorBtnActionHover);
 }

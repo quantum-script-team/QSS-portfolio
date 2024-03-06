@@ -2,7 +2,7 @@ import "../../styles/footer/footer.css";
 import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { AiOutlineLinkedin } from "react-icons/ai";
-import { AiOutlineFacebook } from "react-icons/ai";
+// import { AiOutlineFacebook } from "react-icons/ai";
 
 const Footer = () => {
   return (

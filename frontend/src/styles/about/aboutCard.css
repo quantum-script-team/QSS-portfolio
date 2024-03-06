@@ -21,10 +21,14 @@
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
-    box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 var(--backgroundTransparent);
     transition: box-shadow .5s;
 }
 
 .card-description .card__links a:hover{
-    box-shadow: 0 0 .5rem #7F5AF0;
+    box-shadow: 0 0 .5rem var(--colorBoxShadowBtnCardQSSHover);
+}
+
+.icon__card--dev {
+    color: var(--colorIconAbout);
 }

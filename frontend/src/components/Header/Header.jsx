@@ -16,7 +16,7 @@ const Header = () => {
   const navLinks = [
     { title: "INICIO", path: "/" },
     { title: "ACERCA DE QSS", path: "/about" },
-    { title: "PROYECTOS", path: "/projects" },
+    { title: "PORTAFOLIO", path: "/projects" },
   ];
 
   const style = {

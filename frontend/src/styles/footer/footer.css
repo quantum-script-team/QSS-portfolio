@@ -1,5 +1,5 @@
 .footer {
-  background-color: #242629;
+  background-color: var(--backgroundFooter);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 }
 
 .footer__copy {
-  color: #ffffff;
+  color: var(--colorWhite);
   font-size: 0.9rem;
   font-weight: 550;
 }
@@ -21,7 +21,7 @@
 }
 
 .footer__social--icon {
-  color: #7f5af0;
+  color: var(--colorIconsFooter);
   font-size: 1.5rem;
 }
 

@@ -1,5 +1,5 @@
 .landing {
-  background-image: url(/img/Inicio/background.png);
+  background-image: var(--backroundImage);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@
 .landing__description {
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: var(--colorWhite);
 }
 
 .landing__description--h4 {
@@ -32,8 +32,8 @@
 
 .landing__btn--contacto {
   text-transform: uppercase;
-  background-color: #2cb67d;
-  color: #fff;
+  background-color: var(--backgroundBtnPrimary);
+  color: var(--colorWhite);
   font-size: 1rem;
   font-weight: 550;
   padding: 1rem 2rem;
@@ -45,7 +45,7 @@
   outline: none;
 }
 .landing__btn--contacto:active {
-  background-color: rgba(44, 182, 125, 0.68);
+  background-color: var(--backgroundBtnPrimaryActive);
 }
 
 .landing__container {
