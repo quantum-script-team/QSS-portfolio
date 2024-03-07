@@ -46,7 +46,7 @@
           "id": 7,
           "name": "Did you watch it?",
           "image": "/img/projects/did-u-watch-it.png",
-          "description": "",
+          "description": "Aplicación para la búsqueda de película y series, en donde se puede gestionar roles de usuarios y de favoritos, lo que garantiza una experiencia de usuario óptima.",
           "link": "https://duwi-frontend.vercel.app/Home"
         },
         {

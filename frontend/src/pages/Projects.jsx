@@ -8,16 +8,18 @@ const Projects = () => {
     <section id="projects__section">
       <h1>Explorá nuestros proyectos realizados</h1>
       <div>
+        <div id='projects__carousel'>
+          <ProjectsSlider></ProjectsSlider>
+        </div>
         <div id='projects__actions'>
-          <Link to={`/`} className="contact__link">
-            <MdOutlineArrowBackIosNew />
-          </Link>
+          <div id="back__container">
+            <Link to={`/`} id="back__button--projects">
+              <MdOutlineArrowBackIosNew />
+            </Link>
+          </div>
           <Link to={`/contact`} className="contact__link">
             Contáctanos
           </Link>
-        </div>
-        <div id='projects__carousel'>
-          <ProjectsSlider></ProjectsSlider>
         </div>
       </div>
     </section>

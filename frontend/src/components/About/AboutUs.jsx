@@ -9,9 +9,9 @@ const AboutUs = () => {
       <hr className="underline" />
       <article className="about-container">
         <p>
-        Potenciar el crecimiento empresarial a través de soluciones integrales en tecnología informática, QuantumScript Services se posiciona como un socio estratégico esencial, brindando un sólido sustento para la cadena de valor de sus clientes. Nuestro compromiso se centra en impulsar la excelencia y la innovación, guiando a las empresas hacia un futuro digital exitoso con resultados duraderos.F
+          Nos encargamos de potenciar el crecimiento empresarial a través de soluciones integrales en tecnología informática, QuantumScript Services se posiciona como un socio estratégico esencial, brindando un sólido sustento para la cadena de valor de sus clientes. Además, nuestro compromiso se centra en impulsar la excelencia y la innovación, guiando a las empresas hacia un futuro digital exitoso con resultados duraderos.
         </p>
-        <Link className='about__link' to='/about'>Conocé más acerca de QSS</Link>
+        <Link className='about__link' to='/about'>Conoce más acerca de QSS</Link>
       </article>
     </section>
   );
