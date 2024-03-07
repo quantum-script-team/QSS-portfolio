@@ -15,12 +15,14 @@
   --colorBoxShadowBtnCardQSSHover: #7F5AF0;
   --colorBoxShadowAcercaQSS: rgba(0, 0, 0, 0.1);
   --colorTextAcercaQSS: #2D2D2D;
-  --colorBackBtnAcercaQSS: #f5f5f5; 
+  --colorBackBtnAcercaQSS: #f5f5f5;
+  --bgColorBackBtnAcercaQSS: #222222BB; 
   --colorBackBtnAcercaQSSHover: #2CB67D; 
   --colorTextPageAbout: #f5f5f5;
   --colorTextTitleCardDev: #2D2D2D;
   --colorIconAbout: #7F5AF0;
   --colorBtnTextAcercaQSS: #2CB67D;
+  --colorHoverBtnTextAcercaQSS: #7F5AF0;
   --backroundPageAcercaQSS: #2D2D2D;
   --backroundAcercaQSS: #F5F5F5;
   --backroundCardContainerQSS: #f5f5f5;
@@ -62,6 +64,8 @@
   /* Variables  Footer */
   --backgroundFooter: #242629;
   --colorIconsFooter: #7f5af0;
+  --colorFontsFooter: #F5F5F5;
+  --colorHoverLink: #7f5af0;
 
   /* Variables ArrowUP */
   --ColorArrowUp: #7f5af0;

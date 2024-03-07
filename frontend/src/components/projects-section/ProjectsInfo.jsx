@@ -14,7 +14,7 @@ function ProjectsInfo() {
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 30000,
-    waitForAnimate: false,
+    waitForAnimate: true,
   };
   return (
     <div className="slider-container">

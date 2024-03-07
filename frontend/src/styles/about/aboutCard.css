@@ -1,8 +1,8 @@
-.card-description .card__data{
+.card-description{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card-description .card__links{
@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: .5rem 0;
 }
 

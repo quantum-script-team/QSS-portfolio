@@ -7,13 +7,13 @@ import { MdOutlineArrowBackIosNew } from "react-icons/md";
 const About = () => {
   return (
     <section className="about__page__container">
-      <h1>Equipo de desarrolladores</h1>
+      <h1>Nuestro equipo</h1>
       <div id="back__container">
         <Link id="back__button" to="/">
-          <MdOutlineArrowBackIosNew />
+          <MdOutlineArrowBackIosNew size={"1rem"} />
         </Link>
       </div>
-      <div id="about__description">
+      <article id="about__description">
         <p>
           QuantumScript Services, originado como un emprendimiento de tres
           visionarios, ha evolucionado con determinación para convertirse en un
@@ -41,14 +41,13 @@ const About = () => {
           construimos asociaciones duraderas basadas en la excelencia digital y
           la innovación constante.
         </p>
-      </div>
+      </article>
       <article className="card-group">
-        {companyTeam.map((member, index) => (
+        {companyTeam.map((member) => (
           <CardAbout
             key={member.id}
             memberNumber={member.id}
             memberData={member}
-            isLastInGroup={index % 2 !== 0 || index === companyTeam.length - 1}
           />
         ))}
       </article>
