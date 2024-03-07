@@ -25,6 +25,8 @@
   align-items: center;
   justify-content: center;
   transition: 1s;
+  background-color: var(--bgColorBackBtnAcercaQSS);
+  z-index: 10;
 }
 
 #back__button:hover{
@@ -36,9 +38,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 1rem;
-  margin: 2rem 1rem;
+  margin: 2rem 6rem;
 }
 
 h1{
@@ -54,46 +55,47 @@ h1{
   flex-wrap: wrap;
   flex-direction: row;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: var(--backroundCardContainerQSS);
-  padding: 1.5rem;
-  border-radius: 5px;
+  padding: 1rem;
+  border-radius: .5rem;
 }
   
-  .card {
-    width: 30%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    background-color: var(--backroundCardQSS);
-    border: 1px solid var(--backroundCardQSSBorder);
-    color: var(--colorTextTitleCardDev);
-    border-radius: .5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    filter: saturate(1.2);
-  }
-  
-  .card-image {
-    width: 40%;
-    height: 100%;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: .5rem 0 0 .5rem;
-  }
-  
+.card {
+  width: 450px;
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: 1rem;
+  background-color: var(--backroundCardQSS);
+  border: 1px solid var(--backroundCardQSSBorder);
+  color: var(--colorTextTitleCardDev);
+  border-radius: .5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  filter: saturate(1.2);
+}
+.card-image {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5rem 0 0 .5rem;
+}
+
   .card-description {
-    width: 60%;
+    width: 50%;
+    margin: 0;
     padding: 1rem;
     text-align: left;
   }
@@ -102,6 +104,8 @@ h1{
 
   @media screen and (max-width: 1024px){
     .card{
+      width: 220px;
+      height: 440px;
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -118,22 +122,27 @@ h1{
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 840px) {
     .card {
-      width: 48%;
+      width: 320px;
+      height: 440px;
       margin: 1%;
       display: flex;
       flex-direction: column;
       align-items: stretch;
       justify-content: space-between;
     }
-  
     .card-image,
     .card-description {
       width: 100%;
     }
     .card-description{
       padding: 1rem;
+    }
+    #back__button{
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
     }
   }
 
@@ -146,12 +155,19 @@ h1{
       align-items: stretch; 
       justify-content: space-between; 
     }
-  
     .card-image,
     .card-description {
       width: 100%;
     }
     .card-description{
       padding: 1rem;
+    }
+    #about__description{
+      margin: 1rem;
+    }
+    #back__button{
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
     }
   }

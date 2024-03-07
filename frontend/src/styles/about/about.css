@@ -29,15 +29,14 @@
 .about-container .about__link{
     color: var(--colorBtnTextAcercaQSS); 
     border: none;
-    padding: .5rem 2rem;
+    padding: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
-    border-bottom: 1px solid var(--backgroundTransparent);
-    transition: border-bottom .5s;
+    transition: color .5s;
 }
 
 .about__link:hover{
-    border-bottom: 1px solid var(--colorBtnTextAcercaQSS);
+    color: var(--colorHoverBtnTextAcercaQSS);
 }
 
 .underline{

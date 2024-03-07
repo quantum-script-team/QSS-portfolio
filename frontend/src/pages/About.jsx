@@ -10,10 +10,10 @@ const About = () => {
       <h1>Nuestro equipo</h1>
       <div id="back__container">
         <Link id="back__button" to="/">
-          <MdOutlineArrowBackIosNew />
+          <MdOutlineArrowBackIosNew size={"1rem"} />
         </Link>
       </div>
-      <div id="about__description">
+      <article id="about__description">
         <p>
           QuantumScript Services, originado como un emprendimiento de tres
           visionarios, ha evolucionado con determinación para convertirse en un
@@ -41,7 +41,7 @@ const About = () => {
           construimos asociaciones duraderas basadas en la excelencia digital y
           la innovación constante.
         </p>
-      </div>
+      </article>
       <article className="card-group">
         {companyTeam.map((member) => (
           <CardAbout

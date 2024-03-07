@@ -21,9 +21,8 @@
     padding: 0 1.5rem;
 }
 
-.contact__link{
-    padding: .5rem;
-    font-size: 1.5rem;
+.contact__link, #back__button--projects{
+    padding: 1rem;
     border-radius: .5rem;
     border: 1px solid var(--colorBorderAction);
     color: var(--colorIconAction);
@@ -34,7 +33,29 @@
     justify-content: center;
     transition: 1s;
 }
-.contact__link:hover{
+.contact__link{
+    margin: 1.5rem;
+}
+#back__button--projects{
+    background-color: var(--bgColorBackBtnAcercaQSS);
+}
+.contact__link:hover, #back__button--projects:hover{
     border: 1px solid var(--colorBtnActionHover);
     color: var(--colorBtnActionHover);
+}
+
+@media screen and (max-width: 1024px) {
+    #projects__actions{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #back__button--projects{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 10;
+    }
 }
