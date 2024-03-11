@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
 
   /* Variables Generales */
   --fontFamily: 'Exo', sans-serif;
   --colorWhite: #FFF;
   --colorBlack: #000;
-  --backroundImage: url(/img/Inicio/background.png);
   --backgroundBtnPrimary: #2cb67d;
   --backgroundTransparent: transparent;
   --backgroundBtnPrimaryHover: #2CB67D;

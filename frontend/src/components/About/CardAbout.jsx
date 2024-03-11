@@ -5,7 +5,7 @@ const CardAbout = ({ memberData }) => {
   return (
     <div className="card">
       <div className="card-image">
-        <img src={`/img/miembros/${memberData.photo}`} alt={memberData.name} />
+        <img src={`/img/miembros/${memberData.photo}`} alt={memberData.name} loading="lazy" />
       </div>
       <div className="card-description">
         <div className="member__data">

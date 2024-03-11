@@ -47,7 +47,7 @@ const Servicios = () => {
           <div className="services__card" key={serv.id}>
             <div className="services__card--container">
               <div className="services__container--img">
-                <img src={serv.img} alt="LogoWWW" className="services__img" />
+                <img src={serv.img} alt="LogoWWW" className="services__img" loading="lazy" />
               </div>
               <h2 className="services__title">{serv.title}</h2>
               <p className="services__text">{serv.description}</p>

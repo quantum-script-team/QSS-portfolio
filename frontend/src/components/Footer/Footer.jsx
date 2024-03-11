@@ -48,33 +48,33 @@ const Footer = () => {
 				<ul>
 					<li>
 						<img
-							src="/img/logos-payments/BinanceCoin-Logo.wine.svg"
-							alt="Binance"
+							src="/img/logos-payments/BinanceCoin-Logo.wine.webp"
+							alt="Binance" loading="lazy" 
 						/>
 					</li>
 					<li>
 						<img
-							src="/img/logos-payments/Bitcoin-Logo.wine.svg"
-							alt="Bitcoin"
+							src="/img/logos-payments/Bitcoin-Logo.wine.webp"
+							alt="Bitcoin" loading="lazy"
 						/>
 					</li>
 					<li>
-						<img src="/img/logos-payments/Ethereum-Logo.wine.svg" alt="Ether" />
+						<img src="/img/logos-payments/Ethereum-Logo.wine.webp" alt="Ether" loading="lazy" />
 					</li>
 					<li>
-						<img src="/img/logos-payments/Tether-Logo.wine.svg" alt="Tether - USDT" />
+						<img src="/img/logos-payments/Tether-Logo.wine.webp" alt="Tether - USDT" loading="lazy" />
 					</li>
 					<li>
 						<img
-							src="/img/logos-payments/Mastercard-Logo.wine.svg"
-							alt="Mastercard"
+							src="/img/logos-payments/Mastercard-Logo.wine.webp"
+							alt="Mastercard" loading="lazy"
 						/>
 					</li>
 					<li>
-						<img src="/img/logos-payments/Visa_Inc.-Logo.wine.svg" alt="Visa" />
+						<img src="/img/logos-payments/Visa_Inc.-Logo.wine.webp" alt="Visa" loading="lazy" />
 					</li>
 					<li>
-						<img src="/img/logos-payments/Mercado-pago.svg" alt="Mercado Pago" />
+						<img src="/img/logos-payments/Mercado-pago.webp" alt="Mercado Pago" loading="lazy" />
 					</li>
 				</ul>
 			</section>

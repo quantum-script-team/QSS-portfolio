@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import "../../styles/projects/projectsSlider.css";
 import "../../styles/projects/projectCard.css";
 
@@ -10,11 +12,22 @@ import ProjectLinkBtn from "./ProjectLinkBtn";
 import ProjectTitle from "./ProjectTitle";
 
 const Project = ({ projectData }) => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = projectData.image;
+
+    img.onload = () => {
+      setLoaded(true);
+    };
+  }, []);
+
   return (
     <Card sx={{ maxWidth: 320, border: "1px solid #444", borderRadius: ".5rem"}} className="project__card">
       <CardMedia
         sx={{ height: 220 }}
-        image={projectData.image}
+        image={loaded ? projectData.image : ''}
         title={projectData.name}
       />
       <CardContent sx={{ backgroundColor: "#242629", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", padding: "1.5rem"}}>
