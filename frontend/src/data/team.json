@@ -5,7 +5,7 @@
             "name": "Cristian Recabarren",
             "role": "Fullstack Developer",
             "charge": "co-founder",
-            "photo": "Cristian.svg",
+            "photo": "Cristian.png",
             "linkedIn": "https://www.linkedin.com/in/recabarren-cristian/",
             "github": "https://github.com/bit-rec98"
         },
@@ -14,43 +14,43 @@
             "name": "Facundo Rullo",
             "role": "Front End Developer | UX/UI Designer",
             "charge": "co-founder",
-            "photo": "Facu.svg",
+            "photo": "Facu.png",
             "linkedIn": "https://linkedin.com/in/facundo-rullo-152bbb279/",
             "github": "https://github.com/FacuuR001"
         },
         {
             "id": 3,
-            "name": "Lucas Zamblera",
-            "role": "Backend Developer",
-            "charge": "backend team co-director",
-            "photo": "Lucas.svg",
-            "linkedIn": "https://www.linkedin.com/in/lucas-daniel-zamblera-a80275217/",
-            "github": "https://github.com/LDZamblera"
+            "name": "Nazareno Dershohannetyan",
+            "role": "Frontend Developer",
+            "charge": "co-founder",
+            "photo": "Dersho.png",
+            "linkedIn": "https://www.linkedin.com/in/nazareno-dershohannetyan-74a653248/",
+            "github": "https://github.com/nazarenodersho"
         },
         {
             "id": 4,
             "name": "Mayra Denhoff",
             "role": "Backend Developer",
             "charge": "backend team co-director",
-            "photo": "May.svg",
+            "photo": "May.png",
             "linkedIn": "https://www.linkedin.com/in/mayradenhoff/",
             "github": "https://github.com/Maydenhoff"
         },
         {
             "id": 5,
-            "name": "Nazareno Dershohannetyan",
-            "role": "Frontend Developer",
-            "charge": "co-founder",
-            "photo": "Dersho.svg",
-            "linkedIn": "https://www.linkedin.com/in/nazareno-dershohannetyan-74a653248/",
-            "github": "https://github.com/nazarenodersho"
+            "name": "Lucas Zamblera",
+            "role": "Backend Developer",
+            "charge": "backend team co-director",
+            "photo": "Lucas.png",
+            "linkedIn": "https://www.linkedin.com/in/lucas-daniel-zamblera-a80275217/",
+            "github": "https://github.com/LDZamblera"
         },
         {
             "id": 6,
             "name": "Benjamin Milanesio",
             "role": "Asesor comercial",
             "charge": "commercial co-director",
-            "photo": "Benja.svg",
+            "photo": "Benja.png",
             "linkedIn": "#"
         },
         {
@@ -58,7 +58,7 @@
             "name": "Bruno Beltramone",
             "role": "Asesor comercial",
             "charge": "commercial co-director",
-            "photo": "Bruno.svg",
+            "photo": "Bruno.png",
             "linkedIn": "#"
         }
     ]
