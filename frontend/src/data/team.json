@@ -44,22 +44,6 @@
             "photo": "Lucas.png",
             "linkedIn": "https://www.linkedin.com/in/lucas-daniel-zamblera-a80275217/",
             "github": "https://github.com/LDZamblera"
-        },
-        {
-            "id": 6,
-            "name": "Benjamin Milanesio",
-            "role": "Asesor comercial",
-            "charge": "commercial co-director",
-            "photo": "Benja.png",
-            "linkedIn": "#"
-        },
-        {
-            "id": 7,
-            "name": "Bruno Beltramone",
-            "role": "Asesor comercial",
-            "charge": "commercial co-director",
-            "photo": "Bruno.png",
-            "linkedIn": "#"
         }
     ]
 }
