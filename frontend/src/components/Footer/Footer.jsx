@@ -89,10 +89,3 @@ const Footer = () => {
 
 export default Footer;
 
-/*
-
-<FaInstagram />
-<MdOutlineMailOutline />
-<AiOutlineLinkedin />
-
-*/
