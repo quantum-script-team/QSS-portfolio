@@ -5,7 +5,7 @@
             "name": "Cristian Recabarren",
             "role": "Fullstack Developer",
             "charge": "co-founder",
-            "photo": "Cristian.png",
+            "photo": "Cristian.webp",
             "linkedIn": "https://www.linkedin.com/in/recabarren-cristian/",
             "github": "https://github.com/bit-rec98"
         },
@@ -14,7 +14,7 @@
             "name": "Facundo Rullo",
             "role": "Front End Developer | UX/UI Designer",
             "charge": "co-founder",
-            "photo": "Facu.png",
+            "photo": "Facu.webp",
             "linkedIn": "https://linkedin.com/in/facundo-rullo-152bbb279/",
             "github": "https://github.com/FacuuR001"
         },
@@ -23,7 +23,7 @@
             "name": "Nazareno Dershohannetyan",
             "role": "Frontend Developer",
             "charge": "co-founder",
-            "photo": "Dersho.png",
+            "photo": "Dersho.webp",
             "linkedIn": "https://www.linkedin.com/in/nazareno-dershohannetyan-74a653248/",
             "github": "https://github.com/nazarenodersho"
         },
@@ -32,7 +32,7 @@
             "name": "Mayra Denhoff",
             "role": "Backend Developer",
             "charge": "backend team co-director",
-            "photo": "May.png",
+            "photo": "May.webp",
             "linkedIn": "https://www.linkedin.com/in/mayradenhoff/",
             "github": "https://github.com/Maydenhoff"
         },
@@ -41,7 +41,7 @@
             "name": "Lucas Zamblera",
             "role": "Backend Developer",
             "charge": "backend team co-director",
-            "photo": "Lucas.png",
+            "photo": "Lucas.webp",
             "linkedIn": "https://www.linkedin.com/in/lucas-daniel-zamblera-a80275217/",
             "github": "https://github.com/LDZamblera"
         }

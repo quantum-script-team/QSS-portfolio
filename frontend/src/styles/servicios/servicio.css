@@ -55,7 +55,8 @@
   width: 80%;
   max-width: 200px;
   padding: .3rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
   border: none;
   background-color: var(--backgroundBtnPrimary);
   transition: background-color .5s;
