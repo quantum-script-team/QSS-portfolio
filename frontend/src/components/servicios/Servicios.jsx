@@ -34,11 +34,11 @@ const Servicios = () => {
     infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
   };
-
+  
   return (
     <div className="services">
       <h1 className="services__h1">SERVICIOS</h1>
