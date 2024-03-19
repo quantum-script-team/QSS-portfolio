@@ -17,8 +17,8 @@ export const sendEmail = (error,form, setFormData, navigate) => {
 
       emailjs
         // .sendForm(service_id, "fsag", form.current, {
-        .sendForm(service_id, template, form.current, {
-          publicKey: public_key,
+        .sendForm("service_w3bq1fj", "template_o2lanma", form.current, {
+          publicKey: "qrPgwAJXeYJh98ZY-",
         })
         .then(
           () => {
