@@ -1,5 +1,4 @@
 import emailjs from '@emailjs/browser';
-import { public_key, service_id, template } from "./environmentVariables";
 import Swal from 'sweetalert2'
 
 const checkMail = (obj) => {
@@ -16,9 +15,8 @@ export const sendEmail = (error,form, setFormData, navigate) => {
     if (checkMail(error)) {
 
       emailjs
-        // .sendForm(service_id, "fsag", form.current, {
-        .sendForm("service_w3bq1fj", "template_o2lanma", form.current, {
-          publicKey: "qrPgwAJXeYJh98ZY-",
+         .sendForm("service_w3bq1fj", "template_o2lanma", form.current, {
+          publicKey: "cXEjsdNq5mbGm570m",
         })
         .then(
           () => {
