@@ -1,11 +1,12 @@
 import "../../styles/contact/contact.css";
 import FormField from "./FormField";
 import FormCountry from "./FormCountry";
+import TextArea from  "./TextArea";
 import { useState } from "react";
 import React, { useRef } from 'react';
-import Swal from 'sweetalert2'
 import { sendEmail } from "../../utils/sendEmail";
 import {  useNavigate } from "react-router";
+
 
 const Contact = () => {
   const form = useRef();
@@ -104,11 +105,10 @@ const Contact = () => {
           onChange={handleInputChange}
           setError={setError}
           error={error} />
-        <FormField
+        <TextArea
           id="message"
           name="message"
           label="Mensaje"
-          type="text"
           value={formData.message}
           onChange={handleInputChange}
           setError={setError}

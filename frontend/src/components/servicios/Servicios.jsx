@@ -51,7 +51,7 @@ const Servicios = () => {
               </div>
               <h2 className="services__title">{serv.title}</h2>
               <p className="services__text">{serv.description}</p>
-              <a href="#contactus" className="services__btn">Consulta</a>
+              <a href="#contactus" className="services__btn">Consultar</a>
             </div>
           </div>
         ))}

@@ -15,7 +15,7 @@ export const sendEmail = (error,form, setFormData, navigate) => {
     if (checkMail(error)) {
 
       emailjs
-         .sendForm("service_w3bq1fj", "template_o2lanma", form.current, {
+        .sendForm("service_w3bq1fj", "template_o2lanma", form.current, {
           publicKey: "cXEjsdNq5mbGm570m",
         })
         .then(
