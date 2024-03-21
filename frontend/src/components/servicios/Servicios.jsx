@@ -36,9 +36,9 @@ const Servicios = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
   };
-  
+
   return (
     <div className="services">
       <h1 className="services__h1">SERVICIOS</h1>

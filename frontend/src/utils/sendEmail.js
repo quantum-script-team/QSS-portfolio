@@ -57,7 +57,7 @@ export const sendEmail = (error,form, setFormData, navigate) => {
           (error) => {
             Swal.fire({
               icon: "warning",
-              html: `<p>Su consulta no pudo ser enviada. Puede mandarnos su consulta por este e-mail: <a href=mailto:${"contact.quantumscript@gmail.com"}>contact.quantumscript@gmail.com</a></p>`,
+              html: `<p>Su consulta no pudo ser enviada. Puede escribirnos a este e-mail: <a href=mailto:${"contact.quantumscript@gmail.com"}>contact.quantumscript@gmail.com</a></p>`,
               confirmButtonColor: "#2cb67d",
             })          },
             );
