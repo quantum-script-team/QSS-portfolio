@@ -6,7 +6,7 @@ const ProjectsFade = ({ projectData }) => {
     return (
         <div className="projects__grid">
             <div className="image__container">
-                <img src={`../../public/img/projects/${projectData.image}`} alt="" />
+                <img src={projectData.image} alt="Projects" loading="lazy"/>
             </div>
 
 

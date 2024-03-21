@@ -4,41 +4,46 @@
             "id": 1,
             "name": "Cristian Recabarren",
             "role": "Fullstack Developer",
-            "photo": "Cristian.jpeg",
-            "linkedIn": "https://www.linkedin.com/in/recabarrencristian98/",
+            "charge": "co-founder",
+            "photo": "Cristian.webp",
+            "linkedIn": "https://www.linkedin.com/in/recabarren-cristian/",
             "github": "https://github.com/bit-rec98"
         },
         {
             "id": 2,
             "name": "Facundo Rullo",
             "role": "Front End Developer | UX/UI Designer",
-            "photo": "Facu.jpeg",
+            "charge": "co-founder",
+            "photo": "Facu.webp",
             "linkedIn": "https://linkedin.com/in/facundo-rullo-152bbb279/",
             "github": "https://github.com/FacuuR001"
         },
         {
             "id": 3,
-            "name": "Lucas Zamblera",
-            "role": "Backend Developer",
-            "photo": "Lucas.jpeg",
-            "linkedIn": "https://www.linkedin.com/in/lucas-daniel-zamblera-a80275217/",
-            "github": "https://github.com/LDZamblera"
+            "name": "Nazareno Dershohannetyan",
+            "role": "Frontend Developer",
+            "charge": "co-founder",
+            "photo": "Dersho.webp",
+            "linkedIn": "https://www.linkedin.com/in/nazareno-dershohannetyan-74a653248/",
+            "github": "https://github.com/nazarenodersho"
         },
         {
             "id": 4,
             "name": "Mayra Denhoff",
             "role": "Backend Developer",
-            "photo": "May.jpeg",
+            "charge": "backend team co-director",
+            "photo": "May.webp",
             "linkedIn": "https://www.linkedin.com/in/mayradenhoff/",
             "github": "https://github.com/Maydenhoff"
         },
         {
             "id": 5,
-            "name": "Nazareno Dershohannetyan",
-            "role": "Frontend Developer",
-            "photo": "Dersho.jpeg",
-            "linkedIn": "https://www.linkedin.com/in/nazareno-dershohannetyan-74a653248/",
-            "github": "https://github.com/nazarenodersho"
+            "name": "Lucas Zamblera",
+            "role": "Backend Developer",
+            "charge": "backend team co-director",
+            "photo": "Lucas.webp",
+            "linkedIn": "https://www.linkedin.com/in/lucas-daniel-zamblera-a80275217/",
+            "github": "https://github.com/LDZamblera"
         }
     ]
 }

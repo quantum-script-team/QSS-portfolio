@@ -9,12 +9,9 @@ const AboutUs = () => {
       <hr className="underline" />
       <article className="about-container">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minus quam aspernatur
-          aut eos dicta numquam consequatur soluta, perspiciatis at atque ipsam explicabo veniam
-          harum tempore neque alias ipsum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sed animi deserunt facilis amet aperiam labore
-          laboriosam magni in tenetur quas cum vero minus autem praesentium quia quae, est non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, veritatis. Voluptate, veniam dicta. Obcaecati cupiditate dolor quia,vero dignissimos voluptate aut, illum odit incidunt cum explicabo, porro minima harum voluptatem!
+          Nos encargamos de potenciar el crecimiento empresarial a través de soluciones integrales en tecnología informática, QuantumScript Services se posiciona como un socio estratégico esencial, brindando un sólido sustento para la cadena de valor de sus clientes. Además, nuestro compromiso se centra en impulsar la excelencia y la innovación, guiando a las empresas hacia un futuro digital exitoso con resultados duraderos.
         </p>
-        <Link className='about__link' to='/about'>Conocé más acerca de QSS</Link>
+        <Link className='about__link' to='/about'>Conoce más acerca de QSS</Link>
       </article>
     </section>
   );

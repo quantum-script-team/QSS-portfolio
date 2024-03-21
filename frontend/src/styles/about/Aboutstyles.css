@@ -1,81 +1,115 @@
 .about__page__container {
     text-align: center;
     font-family: 'Exo', Arial, sans-serif;
-    color: #ffffff;
-    background-color: #2D2D2D;
+    color: var(--colorTextPageAbout);
+    background-color: var(--backroundPageAcercaQSS);
     padding: 20px;
-  }
-  
-  .card-group {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    background-color: #ffffff;
-    color: #2D2D2D;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 15px;
-  }
-  
-  .card {
-    width: 30%;
-    max-width: auto;
-    height: 250px; /* Altura fija para las tarjetas */
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    border: 1px solid #DDDDDD;
-    color: #2D2D2D;
-    border-radius: .5rem;
-    display: flex;
-    flex-direction: row;
-    transition: transform 0.3s ease-in-out;
-    font-family: 'Exo', Arial, sans-serif;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    filter: saturate(1.2);
-  }
-  
-  .card-image {
-    width: 40%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: .5rem 0 0 .5rem;
-  }
-  
-  .card-description {
-    width: 60%;
-    height: 100%;
-    padding: 1rem;
-    text-align: left;
   }
 
-  #back__button{
-    background-color: #f5f5f5;
+#back__container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  margin: .5rem .5rem;
+}
+
+#back__button{
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid var(--colorBackBtnAcercaQSS);
+  color: var(--colorBackBtnAcercaQSS);
+  transition: color .5s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  background-color: var(--bgColorBackBtnAcercaQSS);
+  z-index: 10;
+}
+
+#back__button:hover{
+  color: var(--colorBackBtnAcercaQSSHover);
+  border: 1px solid var(--colorBackBtnAcercaQSSHover);
+}
+
+#about__description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 6rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+#about__description p{
+  text-align: start;
+}
+  
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  background-color: var(--backroundCardContainerQSS);
+  padding: 1rem;
+  border-radius: .5rem;
+}
+  
+.card {
+  width: 450px;
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: 1rem;
+  background-color: var(--backroundCardQSS);
+  border: 1px solid var(--backroundCardQSSBorder);
+  color: var(--colorTextTitleCardDev);
+  border-radius: .5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  filter: saturate(1.2);
+}
+.card-image {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5rem 0 0 .5rem;
+}
+
+  .card-description {
+    width: 50%;
+    margin: 0;
     padding: 1rem;
-    border-radius: .5rem;
-    color: #2D2D2D;
+    text-align: left;
   }
   
   /* Estilos responsive para tablet y dispositivos más pequeños */
 
   @media screen and (max-width: 1024px){
     .card{
+      width: 220px;
+      height: 440px;
       display: flex;
       flex-direction: column;
       align-items: stretch;
       justify-content: space-between;
-      height: 400px;
     }
     .card-image, .card-description{
       width: 100%;
@@ -83,53 +117,57 @@
     .card-image{
       height: 60%;
     }
-    .card-description{
-      height: 40%;
-    }
     .card-image img {
       border-radius: .5rem .5rem 0 0;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 840px) {
     .card {
-      width: 48%;
+      width: 320px;
+      height: 440px;
       margin: 1%;
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      justify-content: space-evenly;
-      height: 350px; /* Mantiene la altura fija en tablet */
+      justify-content: space-between;
     }
-  
     .card-image,
     .card-description {
       width: 100%;
-      height: 50%; /* Ajusta la altura para ocupar la mitad en tablet */
     }
     .card-description{
       padding: 1rem;
+    }
+    #back__button{
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
     }
   }
 
   @media screen and (max-width: 576px) {
     .card {
       width: 100%;
+      margin: 1rem;  
+      display: flex; 
       flex-direction: column;
-      height: 300px; /* Mantiene la altura fija en celular */
-      margin: 1rem; /* Centra horizontalmente */
-      display: flex; /* Centra verticalmente */
-      align-items: center; /* Centra verticalmente */
-      justify-content: space-between; /* Centra verticalmente */
+      align-items: stretch; 
+      justify-content: space-between; 
     }
-  
     .card-image,
     .card-description {
       width: 100%;
-      height: 50%; /* Ajusta la altura para ocupar la mitad en celular */
     }
     .card-description{
       padding: 1rem;
     }
+    #about__description{
+      margin: 1rem;
+    }
+    #back__button{
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
   }
-  

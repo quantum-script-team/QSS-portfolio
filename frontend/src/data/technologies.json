@@ -3,102 +3,102 @@
         {
             "id": 1,
             "name": "HTML5",
-            "logo": "html5-original.svg"
+            "logo": "/img/technologies/html5-original.webp"
         },
         {
             "id": 2,
             "name": "CSS3",
-            "logo": "css3-original.svg"
+            "logo": "/img/technologies/css3-original.webp"
         },
         {
             "id": 3,
             "name": "JavaScript",
-            "logo": "javascript-original.svg"
+            "logo": "/img/technologies/javascript-original.webp"
         },
         {
             "id": 4,
             "name": "Bootstrap",
-            "logo": "bootstrap-original.svg"
+            "logo": "/img/technologies/bootstrap-original.webp"
         },
         {
             "id": 5,
             "name": "Sass",
-            "logo": "sass-original.svg"
+            "logo": "/img/technologies/sass-original.webp"
         },
         {
             "id": 6,
             "name": "Git",
-            "logo": "git-original.svg"
+            "logo": "/img/technologies/git-original.webp"
         },
         {
             "id": 7,
             "name": "GitHub",
-            "logo": "github-original.svg"
+            "logo": "/img/technologies/github-original.webp"
         },
         {
             "id": 8,
             "name": "React",
-            "logo": "react-original.svg"
+            "logo": "/img/technologies/react-original.webp"
         },
         {
             "id": 9,
             "name": "TailwindCSS",
-            "logo": "tailwindcss-original.svg"
+            "logo": "/img/technologies/tailwindcss-original.webp"
         },
         {
             "id": 10,
             "name": "Node.js",
-            "logo": "nodejs-original.svg"
+            "logo": "/img/technologies/nodejs-original.webp"
         },
         {
             "id": 11,
             "name": "Express",
-            "logo": "express-original-wordmark.svg"
+            "logo": "/img/technologies/express-original-wordmark.webp"
         },
         {
             "id": 12,
             "name": "MongoDB",
-            "logo": "mongodb-original.svg"
+            "logo": "/img/technologies/mongodb-original.webp"
         },
         {
             "id": 13,
             "name": "MySQL",
-            "logo": "mysql-original.svg"
+            "logo": "/img/technologies/mysql-original.webp"
         },
         {
             "id": 14,
             "name": "Axios",
-            "logo": "axios-plain.svg"
+            "logo": "/img/technologies/axios-plain.webp"
         },
         {
             "id": 15,
             "name": "Redux",
-            "logo": "redux.svg"
+            "logo": "/img/technologies/redux.webp"
         },
         {
             "id": 16,
             "name": "Python",
-            "logo": "python-original.svg"
+            "logo": "/img/technologies/python-original.webp"
         },
         {
             "id": 17,
             "name": "fastAPI",
-            "logo": "fast-api.svg"
+            "logo": "/img/technologies/fast-api.webp"
         },
         {
             "id": 18,
             "name": "Npm",
-            "logo": "npm-original-wordmark.svg"
+            "logo": "/img/technologies/npm-original-wordmark.webp"
         },
         {
             "id": 19,
             "name": "ChatGPT",
-            "logo": "chatgpt.svg"
+            "logo": "/img/technologies/chatgpt.webp"
         },
         {
             "id": 20,
             "name": "Figma",
-            "logo": "figma-original.svg"
+            "logo": "/img/technologies/figma-original.webp"
         }
     ]
 }

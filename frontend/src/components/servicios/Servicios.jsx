@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -34,11 +34,11 @@ const Servicios = () => {
     infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
   };
-
+  
   return (
     <div className="services">
       <h1 className="services__h1">SERVICIOS</h1>
@@ -47,7 +47,7 @@ const Servicios = () => {
           <div className="services__card" key={serv.id}>
             <div className="services__card--container">
               <div className="services__container--img">
-                <img src={serv.img} alt="LogoWWW" className="services__img" />
+                <img src={serv.img} alt="LogoWWW" className="services__img" loading="lazy" />
               </div>
               <h2 className="services__title">{serv.title}</h2>
               <p className="services__text">{serv.description}</p>

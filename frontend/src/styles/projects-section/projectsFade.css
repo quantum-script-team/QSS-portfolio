@@ -18,14 +18,14 @@
 .projects__name {
     font-weight: 600;
     font-size: 24px;
-    color: #F5F5F5;
+    color: var(--colorTitleProject);
 }
 
 /* Project description */
 .projects__description {
     font-weight: 500;
     font-size: 16px;
-    color: #F5F5F5;
+    color: var(--colorTextProject);
     margin-top: 10px;
 }
 
@@ -43,7 +43,7 @@
     font-size: 1.5rem;
     padding: .5rem;
     text-decoration: none;
-    color: #7F5AF0;
+    color: var(--colorBtnLink);
     border-radius: .5rem;
 
     display: flex;
@@ -51,12 +51,12 @@
     align-items: center;
     justify-content: center;
     
-    box-shadow: 0 0 0 #111;
+    box-shadow: 0 0 0 var(--colorBlack);
     transition: box-shadow .5s;
 }
 
 .link__btn:hover {
-    box-shadow: 0 0 .5rem #2CB67D;
+    box-shadow: 0 0 .5rem var(--colorBtnLinkBorder);
 }
 
 .seeMore__btn {
@@ -65,7 +65,7 @@
     background: none;
     font-weight: 600;
     font-size: 24px;
-    color: #7F5AF0;
+    color: var(--colorViewMore);
     cursor: pointer;
 }
 
@@ -80,7 +80,7 @@
         grid-template-areas: 
         "img name"
         "img description"
-        "img empty"; 
+        "img btn"; 
         justify-items: center; 
     }
 
@@ -109,15 +109,10 @@
 
     /* Project buttons */
     .buttons__container { 
-        grid-area: description;
+        grid-area: btn;
         justify-self: start;
         align-self: center;
         height: 36px;
-    }
-
-    .link__btn {
-        padding: 0;
-        margin-top: 20px;
     }
 
     .seeMore__btn {
@@ -131,10 +126,5 @@
     /* Project description */
     .projects__description {
         font-size: 16px;
-    }
-
-    /* Project Buttons */
-    .link__btn {
-        font-size: 2rem;
     }
 }

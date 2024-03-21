@@ -1,5 +1,5 @@
 .error404 {
-    background-color: #343434;
+    background-color: var(--backgroundError404);
     height: calc(100vh - 97px);
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 .error404__text {
-    color: #fff;
+    color: var(--colorWhite);
     text-align: center;
     font-size: 1.2rem;
     font-weight: 550;
@@ -37,18 +37,18 @@
 }
 
 .error404__btn {
-    background-color: #2CB67D;
+    background-color: var(--backgroundBtnPrimary);
     border: none;
     outline: none;
     padding: .5rem 3rem;
     border-radius: 5px;
-    color: #fff;
+    color: var(--colorWhite);
     text-transform: uppercase;
     font-weight: 550;
 }
 
 .error404__btn:active {
-    background-color: rgba(44, 182, 125, 0.68);
+    background-color: var(--backgroundBtnPrimaryActive);
 }
 
 @media (min-width: 768px) { 
