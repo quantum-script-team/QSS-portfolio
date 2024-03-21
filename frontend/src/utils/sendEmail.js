@@ -1,5 +1,4 @@
 import emailjs from '@emailjs/browser';
-import { public_key, service_id, template } from "./environmentVariables";
 import Swal from 'sweetalert2'
 
 const checkMail = (obj) => {
