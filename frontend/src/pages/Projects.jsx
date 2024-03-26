@@ -2,8 +2,14 @@ import '../styles/projects/projects.css'
 import ProjectsSlider from "../components/projects/ProjectsSlider"
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { Link } from 'react-router-dom'
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <section id="projects__section">
       <h1>Explorá nuestros proyectos realizados</h1>
