@@ -4,7 +4,7 @@ import "../../styles/about/about.css"
 const AboutUs = () => {
 
   return (
-    <section className="about__section__container">
+    <section className="about__section__container" id="about">
       <h1 className='header'>ACERCA DE QSS</h1> 
       <hr className="underline" />
       <article className="about-container">

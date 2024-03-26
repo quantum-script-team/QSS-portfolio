@@ -3,7 +3,7 @@ import ProjectsInfo from "./ProjectsInfo";
 
 const ProjectsSection = () => {
     return (
-        <div className='projects__section'>
+        <div className='projects__section' id="portfolio">
             <h1 className="projects__title">Portafolio</h1>
 
             <div className="projects__container">
