@@ -52,11 +52,9 @@
 }
 
 .services__btn {
-  width: 80%;
-  max-width: 200px;
-  padding: .3rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 550;
   border: none;
   background-color: var(--backgroundBtnPrimary);
   transition: background-color .5s;
@@ -73,4 +71,10 @@
   font-size: 24px;
   font-weight: 500;
   height: 60px;
+}
+
+@media (min-width: 768px) { 
+    .services__btn {
+      font-size: 1.2rem;
+    }
 }

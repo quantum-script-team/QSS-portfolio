@@ -6,13 +6,13 @@ import Select from "@mui/material/Select";
 import { countries } from "../../data/countries.json";
 import { validation } from "../../validations/contact";
 
-const FormCountry = ({setError, name, error, value, onChange}) => {
+const FormCountry = ({ setError, name, error, value, onChange }) => {
   const handleCountryBlur = (event) => {
-    validation(value, event, setError)
+    validation(value, event, setError);
   };
 
   return (
-    <FormControl fullWidth sx={{marginTop: "20px", marginRight: {sm: "20px"}}}>
+    <FormControl fullWidth sx={{ marginTop: "20px", marginRight: { sm: "20px" } }}>
       <InputLabel id="demo-simple-select-label">Pais</InputLabel>
       <Select
         required
@@ -24,9 +24,25 @@ const FormCountry = ({setError, name, error, value, onChange}) => {
         onBlur={handleCountryBlur}
         color={error[name] ? "error" : "success"}
         name={name}
+        MenuProps={{
+          anchorOrigin: {
+            vertical: "bottom",
+            horizontal: "left",
+          },
+          transformOrigin: {
+            vertical: "top",
+            horizontal: "left",
+          },
+          PaperProps: {
+            style: {
+              maxHeight: 200,
+              overflowY: "auto",
+            },
+          },
+        }}
       >
         {countries.map((country) => (
-          <MenuItem key={country.id} value={country.nombre} >
+          <MenuItem key={country.id} value={country.nombre}>
             {country.nombre}
           </MenuItem>
         ))}

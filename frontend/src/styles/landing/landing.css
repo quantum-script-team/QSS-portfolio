@@ -30,7 +30,6 @@
 }
 
 .landing__btn--contacto {
-  text-transform: uppercase;
   background-color: var(--backgroundBtnPrimary);
   color: var(--colorWhite);
   font-size: 1rem;
