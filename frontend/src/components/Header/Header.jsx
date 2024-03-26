@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../styles/header/header.css";
 import { Drawer, AppBar, Toolbar, IconButton, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -8,15 +8,16 @@ import Logo from "/img/Inicio/logo.webp";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation()
 
   const handleLinkClick = () => {
     setOpen(false); 
   };
 
   const navLinks = [
-    { title: "INICIO", path: "/" },
-    { title: "ACERCA DE QSS", path: "/about" },
-    { title: "PORTAFOLIO", path: "/projects" },
+    { title: "INICIO", path: "/", scroll:""},
+    { title: "ACERCA DE QSS", path: "/about", scroll:"#about" },
+    { title: "PORTAFOLIO", path: "/projects", scroll:"#portfolio" },
   ];
 
   const style = {
@@ -40,11 +41,20 @@ const Header = () => {
               <MenuIcon sx={{ color: "#FFF", fontSize: "2.5rem" }} />
             </IconButton>
             <Box sx={{ display: { xs: "none", md: "block" } }}>
-              {navLinks.map((item) => (
-                <Link to={item.path} key={item.title}>
+               {navLinks.map((item) => {             
+                if(location.pathname === "/") {
+                   return (
+                    <a href={item.scroll} className="header__links">{item.title}</a>
+                     )
+                }
+                return (
+
+                  <Link to={item.path} key={item.title}>
                   <span className="header__links">{item.title}</span>
-                </Link>
-              ))}
+                </Link> 
+                   )
+
+              })} 
             </Box>
           </div>
         </Toolbar>

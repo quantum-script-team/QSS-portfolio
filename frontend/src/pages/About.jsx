@@ -3,8 +3,12 @@ import "../styles/about/Aboutstyles.css";
 import { Link } from "react-router-dom";
 import { companyTeam } from "../data/team.json";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <section className="about__page__container">
       <h1>Nuestro equipo</h1>
